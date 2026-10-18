@@ -8,7 +8,7 @@ function NavIcon({ section }: { section: Section }) {
 }
 
 const SECTIONS: { id: Section; label: string; hint: string }[] = [
-  { id: 'muscles', label: '练哪里', hint: '旋转人体，选择肌群' },
+  { id: 'muscles', label: '练哪里', hint: '选肌群，或从器材开始' },
   { id: 'favorites', label: '动作收藏', hint: '收好想练的动作' },
   { id: 'new', label: '视频对照', hint: '新建对照，找回历史' },
 ];

@@ -27,24 +27,24 @@ function ExerciseDetail({ item, onClose }: { item: Exercise; onClose: () => void
 }
 function ExerciseCard({ item, onOpen }: { item: Exercise; onOpen: () => void }) { return <article className="exercise-card"><div className="exercise-card-top"><span className="exercise-category">{item.category} / {EQUIPMENT[item.equipment]}</span><SaveButton item={item} compact /></div><button type="button" className="exercise-open" onClick={onOpen} aria-label={`查看${item.name}教学`}><h3>{item.name}<span aria-hidden="true">↗</span></h3><p>{item.summary}</p><div className="exercise-card-muscles">{item.primary.map(id => <span key={id}>{getMuscle(id)?.name}</span>)}</div><span className="exercise-teaching-label">▷ 查看步骤与教学视频</span></button></article>; }
 
-export function ExerciseBrowser({ muscle, favoritesOnly = false }: { muscle?: MuscleId; favoritesOnly?: boolean }) {
+export function ExerciseBrowser({ muscle, favoritesOnly = false, exerciseIds }: { muscle?: MuscleId; favoritesOnly?: boolean; exerciseIds?: readonly string[] }) {
   const library = useExercises();
   const [equipment, setEquipment] = useState<Equipment | 'all'>('all');
   const [filterMuscle, setFilterMuscle] = useState('all');
   const [detail, setDetail] = useState<Exercise | null>(null);
-  useEffect(() => { setEquipment('all'); setFilterMuscle('all'); setDetail(null); }, [muscle, favoritesOnly]);
+  useEffect(() => { setEquipment('all'); setFilterMuscle('all'); setDetail(null); }, [muscle, favoritesOnly, exerciseIds]);
   useEffect(() => { void library.refreshFavorites(); }, [library.refreshFavorites]);
   if (library.loading && !library.catalog) return <div className="exercise-loading" role="status"><span className="spinner" />正在打开动作库…</div>;
   if (!library.catalog) return <div className="exercise-empty"><h3>动作库暂时没有打开</h3><p>{library.error}</p><button className="button secondary small" onClick={library.reload}>重新加载动作</button></div>;
-  const available = library.catalog.items.filter(item => !muscle || item.primary.includes(muscle));
+  const available = library.catalog.items.filter(item => (!muscle || item.primary.includes(muscle)) && (!exerciseIds || exerciseIds.includes(item.id)));
   const savedItems = available.filter(item => !favoritesOnly || library.saved.has(item.id));
   const items = savedItems.filter(item => (equipment === 'all' || item.equipment === equipment) && (filterMuscle === 'all' || item.primary.includes(filterMuscle as MuscleId)));
-  const supported = MUSCLES.filter(group => library.catalog!.items.some(item => item.primary.includes(group.id)));
+  const supported = MUSCLES.filter(group => available.some(item => item.primary.includes(group.id)));
   return <div className="exercise-browser">
-    <div className="exercise-section-heading"><div><span className="eyebrow">{muscle ? '从目标，找到动作' : favoritesOnly ? '把想练的，留在手边' : '按肌群，找到练法'}</span><h2>{muscle ? `${getMuscle(muscle)?.name}，可以这样练` : favoritesOnly ? '我的收藏' : '浏览动作'}</h2><p>{muscle ? '先选手边的器材，再打开动作看教学。' : favoritesOnly ? '这里收好了你想再看的动作。' : `${library.catalog.items.length} 个代表动作，覆盖 ${supported.length} 个目标肌群。`}</p></div><span className="exercise-count">{items.length} 个动作</span></div>
+    <div className="exercise-section-heading"><div><span className="eyebrow">{muscle ? '从目标，找到动作' : favoritesOnly ? '把想练的，留在手边' : exerciseIds ? '从器材，开始练习' : '按肌群，找到练法'}</span><h2>{muscle ? `${getMuscle(muscle)?.name}，可以这样练` : favoritesOnly ? '我的收藏' : exerciseIds ? '这类器材，可以这样练' : '浏览动作'}</h2><p>{muscle ? '先选手边的器材，再打开动作看教学。' : favoritesOnly ? '这里收好了你想再看的动作。' : exerciseIds ? '打开动作查看教学步骤，也可以收藏，下次继续看。' : `${library.catalog.items.length} 个代表动作，覆盖 ${supported.length} 个目标肌群。`}</p></div><span className="exercise-count">{items.length} 个动作</span></div>
     <LibraryMessages />
-    {!muscle && <label className="exercise-muscle-filter">按目标肌群<select value={filterMuscle} onChange={event => setFilterMuscle(event.target.value)}><option value="all">全部肌群</option>{supported.map(group => <option key={group.id} value={group.id}>{group.name}</option>)}</select></label>}
-    <div className="exercise-equipment-tabs" aria-label="按器材筛选">{(['all', 'bodyweight', 'dumbbell', 'machine'] as const).map(key => <button type="button" key={key} className={equipment === key ? 'active' : ''} aria-pressed={equipment === key} onClick={() => setEquipment(key)}>{key === 'all' ? '全部器材' : EQUIPMENT[key]}</button>)}</div>
+    {!muscle && (!exerciseIds || supported.length > 1) && <label className="exercise-muscle-filter">按目标肌群<select value={filterMuscle} onChange={event => setFilterMuscle(event.target.value)}><option value="all">全部肌群</option>{supported.map(group => <option key={group.id} value={group.id}>{group.name}</option>)}</select></label>}
+    {!exerciseIds && <div className="exercise-equipment-tabs" aria-label="按器材筛选">{(['all', 'bodyweight', 'dumbbell', 'machine'] as const).map(key => <button type="button" key={key} className={equipment === key ? 'active' : ''} aria-pressed={equipment === key} onClick={() => setEquipment(key)}>{key === 'all' ? '全部器材' : EQUIPMENT[key]}</button>)}</div>}
     {favoritesOnly && !library.favoritesReady ? <div className="exercise-empty"><h3>{library.favoritesError ? '收藏暂时无法读取' : '正在找回收藏…'}</h3><p>读取完成后，再显示你的动作。</p></div> : items.length > 0 ? <div className="exercise-grid">{items.map(item => <ExerciseCard key={item.id} item={item} onOpen={() => setDetail(item)} />)}</div> : <div className="exercise-empty"><span aria-hidden="true">◇</span><h3>{available.length === 0 ? '这个肌群的动作正在整理' : favoritesOnly && savedItems.length === 0 ? '先收藏一个想练的动作' : '这个条件下还没有动作'}</h3><p>{available.length === 0 ? '你仍可旋转模型或重新选择目标，查看已收录的动作。' : favoritesOnly && savedItems.length === 0 ? '切到“浏览动作”，点书签就能收好；以后也可以取消收藏。' : '试试其他器材，或清除筛选查看已有动作。'}</p>{savedItems.length > 0 && <button className="button secondary small" onClick={() => { setEquipment('all'); setFilterMuscle('all'); }}>清除筛选</button>}</div>}
     <p className="exercise-library-note">每个动作附有文字资料来源与B站中文演示，具体变式以详情为准。收藏保存在同一私人项目中，手机与电脑可读取。</p>
     {detail && <ExerciseDetail item={detail} onClose={() => setDetail(null)} />}

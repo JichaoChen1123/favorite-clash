@@ -43,3 +43,9 @@ Video module owned separately: `app/video.py` exports `VideoError(code, message)
 Exercise包含稳定id、中文/英文名、category、equipment（bodyweight/dumbbell/machine）、requires、primary/secondary肌群ID、focus、summary、setup、steps、mistakes、source（publisher/title/url/language）及teaching（B站url/title/author/page/part_title/duration/scope）。当前16个代表动作覆盖全部13个可选肌群，文字资料来自Mayo Clinic、ACE及Life Fitness；数量与可筛选肌群由目录计算。中文要点与独立视频作者分别署名，不表示逐句相同或已完成全片动作审查；变式差异在scope说明。提踵P8、侧平举P12、弯举P14、卷腹P43、内收P55均使用明确分P，不能落到合集P1。只按primary匹配所选目标，辅助参与不冒充主练目标；空器材组合明确显示暂无收录。
 
 收藏保存在SQLite独立`exercise_favorites`表，不写视频任务历史；数据库备份包含该表。客户端收到写入成功后才更新状态，失败显示错误与刷新入口；页面切回及进入动作浏览时重新读取收藏。训练计划未实现。
+
+## 器材指南
+
+练哪里内用“按肌群选 / 按器材选”切换，主菜单数量保持3个。`?view=equipment`为器材列表，`&equipment=dumbbells|lat-pulldown|chest-press|seated-row|seated-leg-curl|hip-adduction`恢复相应详情；非法ID显示列表。刷新及popstate恢复当前器材，已有job参数仍优先打开对照。切换其他模块清除器材路由参数。
+
+器材目录与自绘SVG结构示意在前端维护；提供名称/别名搜索、识别要点、使用前调整、当前收录动作的主练肌群与原始资料链接。器材用稳定exerciseIds关联既有动作，不把全部固定器械当作同一设备；哑铃可在关联动作内按肌群筛选。动作教学及收藏复用原接口和组件，不增加模型调用、数据库表或训练处方。拍照识别留待后续。
