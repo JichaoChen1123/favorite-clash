@@ -5,7 +5,7 @@ const root=new URL('../',import.meta.url);
 const read=path=>readFile(new URL(path,root),'utf8');
 const compile=source=>ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
 const data=source=>'data:text/javascript;base64,'+Buffer.from(compile(source)).toString('base64');
-const {remainingRest,parseRestClock,trainingPayload,draftExercises}=await import(data(await read('src/training.ts')));
+const {remainingRest,parseRestClock,trainingPayload,draftExercises,hasSetData,removeDraftExercise,removeDraftSet,trainingStats}=await import(data(await read('src/training.ts')));
 assert.equal(remainingRest({mode:'running',endAt:10000,pausedSeconds:0},1500),9);
 assert.equal(remainingRest({mode:'running',endAt:10000,pausedSeconds:0},10001),0);
 assert.equal(remainingRest({mode:'paused',endAt:0,pausedSeconds:42},999999),42);
@@ -14,6 +14,12 @@ for(const value of [null,'bad','{"mode":"running","endAt":"now","pausedSeconds":
 const clock={mode:'running',endAt:12345,pausedSeconds:0};assert.deepEqual(parseRestClock(JSON.stringify(clock)),clock);
 const sample={exercises:[{exercise_id:'dumbbell-chest-press',name:'哑铃卧推',equipment:'dumbbell',sets:[{id:'set-1',weight_kg:7.5,reps:12,completed:true},{id:'set-2',weight_kg:null,reps:null,completed:false}]}]};
 const draft=draftExercises(sample);assert.equal(draft[0].sets[0].weight,'7.5');assert.equal(draft[0].sets[1].weight,'');
+assert.equal(hasSetData(draft[0].sets[0]),true);assert.equal(hasSetData(draft[0].sets[1]),false);assert.equal(hasSetData({...draft[0].sets[1],weight:'0'}),true);
+const second={exercise_id:'bodyweight-squat',name:'徒手深蹲',equipment:'bodyweight',sets:[{id:'keep',weight:'0',reps:'15',completed:true}]};
+const original=JSON.stringify(draft);assert.deepEqual(removeDraftExercise([...draft,second],second.exercise_id),draft);assert.throws(()=>removeDraftExercise(draft,draft[0].exercise_id));
+const removed=removeDraftSet([...draft,second],draft[0].exercise_id,'set-1');assert.deepEqual(removed[0].sets,[draft[0].sets[1]]);assert.deepEqual(removed[1],second);assert.equal(JSON.stringify(draft),original);assert.throws(()=>removeDraftSet([second],second.exercise_id,'keep'));
+const summarySession={...sample,created_at:'2026-10-18T10:00:00+08:00',ended_at:'2026-10-18T10:02:03+08:00',exercises:[...sample.exercises,{exercise_id:'untouched',sets:[{completed:false}]}]};
+assert.deepEqual(trainingStats(summarySession),{exerciseCount:1,completedSets:1,elapsedSeconds:123});assert.equal(trainingStats({...summarySession,ended_at:null}).elapsedSeconds,null);assert.equal(trainingStats({...summarySession,ended_at:'2026-10-18T09:00:00+08:00'}).elapsedSeconds,null);
 assert.deepEqual(trainingPayload(draft),[{exercise_id:'dumbbell-chest-press',sets:sample.exercises[0].sets}]);
 for(const set of [{weight:'7.5',reps:'',completed:true},{weight:'-1',reps:'12',completed:true},{weight:'7.5',reps:'2.5',completed:true},{weight:'Infinity',reps:'12',completed:true},{weight:'7,5',reps:'12',completed:true}])assert.throws(()=>trainingPayload([{...draft[0],sets:[{id:'set-1',...set}]}]));
 const navigation=compile(await read('src/navigation.ts')).replace("'./muscles'",JSON.stringify(data(await read('src/muscles.ts')))).replace("'./equipment'",JSON.stringify(data(await read('src/equipment.ts'))));
@@ -22,4 +28,4 @@ assert.deepEqual(readAppRoute('?view=training'),{view:'training',jobId:null,musc
 assert.deepEqual(readAppRoute('?view=training&job=existing'),{view:'job',jobId:'existing',muscle:null});
 globalThis.location={href:'http://127.0.0.1:8787/?view=equipment&equipment=dumbbells&muscle=chest&job=old'};
 globalThis.history={pushState(_state,_unused,url){location.href=String(url);}};writeAppUrl('training');assert.equal(new URL(location.href).search,'?view=training');
-console.log(JSON.stringify({status:'passed',timer:'deadline,expired,paused,corrupt-storage',records:'decimal,null,invalid-incomplete',routes:'training,job-priority,cleanup'}));
+console.log(JSON.stringify({status:'passed',timer:'deadline,expired,paused,corrupt-storage',records:'decimal,null,invalid-incomplete',editing:'stable-IDs,remaining-row-guard,source-unchanged',summary:'completed-only,actual-timestamps,missing-time',routes:'training,job-priority,cleanup'}));

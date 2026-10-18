@@ -9,6 +9,29 @@ export type DraftExercise = Omit<TrainingExercise, 'sets'> & { sets: DraftSet[] 
 export function draftExercises(session: TrainingSession): DraftExercise[] {
   return session.exercises.map(item => ({ ...item, sets: item.sets.map(set => ({ id:set.id, weight:set.weight_kg === null ? '' : String(set.weight_kg), reps:set.reps === null ? '' : String(set.reps), completed:set.completed })) }));
 }
+export const hasSetData = (set: DraftSet) => Boolean(set.completed || set.weight.trim() || set.reps.trim());
+export function removeDraftExercise(draft: DraftExercise[], exerciseId: string) {
+  const next = draft.filter(item => item.exercise_id !== exerciseId);
+  if (!next.length) throw new Error('本次训练至少保留一个动作；不再训练时可取消本次训练。');
+  return next;
+}
+export function removeDraftSet(draft: DraftExercise[], exerciseId: string, setId: string) {
+  return draft.map(item => {
+    if (item.exercise_id !== exerciseId) return item;
+    const sets = item.sets.filter(set => set.id !== setId);
+    if (!sets.length) throw new Error('每个动作至少保留一组；不练这个动作可移除动作。');
+    return { ...item, sets };
+  });
+}
+export function trainingStats(session: TrainingSession) {
+  const practiced = session.exercises.filter(item => item.sets.some(set => set.completed));
+  const start = Date.parse(session.created_at), end = Date.parse(session.ended_at || '');
+  return {
+    exerciseCount: practiced.length,
+    completedSets: practiced.reduce((total, item) => total + item.sets.filter(set => set.completed).length, 0),
+    elapsedSeconds: Number.isFinite(start) && Number.isFinite(end) && end >= start ? Math.floor((end-start)/1000) : null,
+  };
+}
 export function trainingPayload(exercises: DraftExercise[]) {
   return exercises.map(item => ({ exercise_id:item.exercise_id, sets:item.sets.map((set, index) => {
     const weight = set.weight.trim(); const reps = set.reps.trim();
