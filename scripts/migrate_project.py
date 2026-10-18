@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TARGET = Path('W:/favorite-clash')
 POWERSHELL = Path(os.environ.get('SystemRoot', 'C:/Windows')) / 'System32/WindowsPowerShell/v1.0/powershell.exe'
 SKIP = {'.venv', '.runtime', 'data', '.pytest_cache', '__pycache__'}
-ENTRY_NAMES = tuple('launchers/' + name for name in ('启动应用.cmd', '停止应用.cmd', '开启手机访问.cmd', '恢复模型分析.cmd'))
+ENTRY_NAMES = tuple('launchers/' + name for name in ('start.cmd', 'stop.cmd', 'enable-mobile.cmd', 'resume-analysis.cmd'))
 
 
 def run(args: list[str | Path], cwd: Path = ROOT) -> None:
