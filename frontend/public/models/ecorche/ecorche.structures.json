@@ -1,0 +1,4724 @@
+[
+ {
+  "name": "Atlas",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12519",
+  "tissue": "bone"
+ },
+ {
+  "name": "Axis",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12520",
+  "tissue": "bone"
+ },
+ {
+  "name": "Body of sternum",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA7487",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left big toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32651",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left fourth toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32657",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left index finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23953",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left little finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23959",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left little toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32659",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left middle finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23955",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left ring finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23957",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left second toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32653",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left third toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32655",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of left thumb",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23951",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right big toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32650",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right fourth toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32656",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right index finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24460",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right little finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24463",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right little toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32658",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right middle finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24461",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right ring finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24462",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right second toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32652",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right third toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32654",
+  "tissue": "bone"
+ },
+ {
+  "name": "Distal phalanx of right thumb",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24459",
+  "tissue": "bone"
+ },
+ {
+  "name": "Eighth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9991",
+  "tissue": "bone"
+ },
+ {
+  "name": "Eleventh thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA10059",
+  "tissue": "bone"
+ },
+ {
+  "name": "Ethmoid",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA52740",
+  "tissue": "bone"
+ },
+ {
+  "name": "External ear",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA52781",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Fifth cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12523",
+  "tissue": "bone"
+ },
+ {
+  "name": "Fifth lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13076",
+  "tissue": "bone"
+ },
+ {
+  "name": "Fifth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9922",
+  "tissue": "bone"
+ },
+ {
+  "name": "First lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13072",
+  "tissue": "bone"
+ },
+ {
+  "name": "First thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9165",
+  "tissue": "bone"
+ },
+ {
+  "name": "Fourth cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12522",
+  "tissue": "bone"
+ },
+ {
+  "name": "Fourth lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13075",
+  "tissue": "bone"
+ },
+ {
+  "name": "Fourth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9248",
+  "tissue": "bone"
+ },
+ {
+  "name": "Frontal bone",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA52734",
+  "tissue": "bone"
+ },
+ {
+  "name": "Intervertebral disk of axis",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA25058",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of eighth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13505",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of eleventh thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13508",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of fifth cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13898",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of fifth lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA16037",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of fifth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13502",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of first lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA16033",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of first thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA10458",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of fourth cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13897",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of fourth lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA16036",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of fourth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13501",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of ninth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13506",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of second lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA16034",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of second thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13495",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of seventh cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13900",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of seventh thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13504",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of sixth cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13899",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of sixth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13503",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of tenth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13507",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of third cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13896",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of third lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA16035",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Intervertebral disk of third thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13500",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left calcaneus",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24498",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left capitate",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24447",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left clavicle",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13323",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left cornea",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA58240",
+  "tissue": "eye"
+ },
+ {
+  "name": "Left cuboid bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24529",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left eighth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8310",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left eleventh rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8532",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left femur",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24475",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fibula",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24481",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fifth costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8112",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left fifth metacarpal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24473",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fifth metatarsal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24516",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fifth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8093",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left first costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8005",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left first metacarpal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24465",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left first metatarsal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24508",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left first rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA7987",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fourth costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8167",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left fourth metacarpal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24471",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fourth metatarsal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24514",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left fourth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8148",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left hamate",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24449",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left hip bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA16587",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left humerus",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23131",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left inferior nasal concha",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA54738",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left intermediate cuneiform bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24524",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left lacrimal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA53646",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left lateral cuneiform bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24526",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left lateral nasal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA59513",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left lower central secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA57143",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lower first secondary molar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55704",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lower first secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55693",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lower lateral secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA57141",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lower second secondary molar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55703",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lower second secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55692",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lower secondary canine tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55687",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left lunate",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24438",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left major alar cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA59506",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left maxilla",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA53650",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left medial cuneiform bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24522",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left nasal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA53648",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left ninth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8391",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left palatine bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA53656",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left parietal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA52789",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left patella",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24487",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left pisiform",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24442",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left radius",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23465",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left scaphoid",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24436",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left scapula",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13396",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left sclera",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA58272",
+  "tissue": "eye"
+ },
+ {
+  "name": "Left second costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8031",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left second metacarpal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24467",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left second metatarsal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24510",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left second rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8012",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left seventh costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8275",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left seventh rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8256",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left sixth costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8221",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left sixth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8202",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left talus",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24483",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left temporal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA52739",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left tenth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8472",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left third costal cartilage",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8058",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Left third metacarpal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24469",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left third metatarsal bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24512",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left third rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8039",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left tibia",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24478",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left trapezium",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24444",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left trapezoid",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24445",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left twelfth rib",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA8534",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left ulna",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23468",
+  "tissue": "bone"
+ },
+ {
+  "name": "Left upper central secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55682",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left upper first secondary molar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55699",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left upper first secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55690",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left upper lateral secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55683",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left upper second secondary molar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55700",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left upper second secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55691",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left upper secondary canine tooth",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA55799",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Left zygomatic bone",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA52893",
+  "tissue": "bone"
+ },
+ {
+  "name": "Mandible",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA52748",
+  "tissue": "bone"
+ },
+ {
+  "name": "Manubrium",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA7486",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left fourth toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32647",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left index finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23938",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left little finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23944",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left little toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA230988",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left middle finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23940",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left ring finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA23942",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left second toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32643",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of left third toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32645",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right fourth toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32646",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right index finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24455",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right little finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24458",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right little toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA230986",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right middle finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24456",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right ring finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24457",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right second toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32642",
+  "tissue": "bone"
+ },
+ {
+  "name": "Middle phalanx of right third toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32644",
+  "tissue": "bone"
+ },
+ {
+  "name": "Navicular bone of left foot",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA24501",
+  "tissue": "bone"
+ },
+ {
+  "name": "Navicular bone of right foot",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24500",
+  "tissue": "bone"
+ },
+ {
+  "name": "Ninth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA10014",
+  "tissue": "bone"
+ },
+ {
+  "name": "Occipital bone",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA52735",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left big toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA43254",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left fourth toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32639",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left index finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA71915",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left little finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA66791",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left little toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32641",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left middle finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA71908",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left ring finger",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA71916",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left second toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32635",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left third toe",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32637",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of left thumb",
+  "layer": "skeleton",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA65470",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right big toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA43253",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right fourth toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32638",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right index finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24451",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right little finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24454",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right little toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32640",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right middle finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24452",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right ring finger",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24453",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right second toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32634",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right third toe",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32636",
+  "tissue": "bone"
+ },
+ {
+  "name": "Proximal phalanx of right thumb",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24450",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right calcaneus",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24497",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right capitate",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24446",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right clavicle",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13322",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right cornea",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA58239",
+  "tissue": "eye"
+ },
+ {
+  "name": "Right cuboid bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24528",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right eighth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8283",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right eleventh rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8531",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right femur",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24474",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fibula",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24480",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fifth costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8070",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right fifth metacarpal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24472",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fifth metatarsal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24515",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fifth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8066",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right first costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7875",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right first metacarpal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24464",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right first metatarsal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24507",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right first rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7857",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fourth costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7976",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right fourth metacarpal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24470",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fourth metatarsal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24513",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right fourth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7957",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right hamate",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24448",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right hip bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA16586",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right humerus",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA23130",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right inferior nasal concha",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA54737",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right intermediate cuneiform bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24523",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right lacrimal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA53645",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right lateral cuneiform bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24525",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right lateral nasal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA59512",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right lower central secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA57142",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lower first secondary molar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55705",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lower first secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55694",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lower lateral secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA57140",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lower second secondary molar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55706",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lower second secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55695",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lower secondary canine tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55686",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right lunate",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24437",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right major alar cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA59505",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right maxilla",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA53649",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right medial cuneiform bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24521",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right nasal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA53647",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right ninth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8364",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right palatine bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA53655",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right parietal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA52788",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right patella",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24486",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right pisiform",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24441",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right radius",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA23464",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right scaphoid",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24435",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right scapula",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13395",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right sclera",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA58271",
+  "tissue": "eye"
+ },
+ {
+  "name": "Right second costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7886",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right second metacarpal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24466",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right second metatarsal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24509",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right second rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7882",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right seventh costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8248",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right seventh rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8229",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right sixth costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8194",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right sixth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8175",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right talus",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24482",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right temporal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA52738",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right tenth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8445",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right third costal cartilage",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7913",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Right third metacarpal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24468",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right third metatarsal bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24511",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right third rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA7909",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right tibia",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24477",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right trapezium",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA24443",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right trapezoid",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA23725",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right twelfth rib",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA8533",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right ulna",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA23467",
+  "tissue": "bone"
+ },
+ {
+  "name": "Right upper central secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55681",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right upper first secondary molar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55698",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right upper first secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55689",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right upper lateral secondary incisor tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55680",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right upper second secondary molar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55697",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right upper second secondary premolar tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55688",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right upper secondary canine tooth",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA55798",
+  "tissue": "tooth"
+ },
+ {
+  "name": "Right zygomatic bone",
+  "layer": "skeleton",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA52892",
+  "tissue": "bone"
+ },
+ {
+  "name": "Sacrum",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA16202",
+  "tissue": "bone"
+ },
+ {
+  "name": "Second lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13073",
+  "tissue": "bone"
+ },
+ {
+  "name": "Second thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9187",
+  "tissue": "bone"
+ },
+ {
+  "name": "Septal nasal cartilage",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA59503",
+  "tissue": "cartilage"
+ },
+ {
+  "name": "Seventh cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12525",
+  "tissue": "bone"
+ },
+ {
+  "name": "Seventh thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9968",
+  "tissue": "bone"
+ },
+ {
+  "name": "Sixth cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12524",
+  "tissue": "bone"
+ },
+ {
+  "name": "Sixth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9945",
+  "tissue": "bone"
+ },
+ {
+  "name": "Sphenoid bone",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA52736",
+  "tissue": "bone"
+ },
+ {
+  "name": "Tenth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA10037",
+  "tissue": "bone"
+ },
+ {
+  "name": "Third cervical vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA12521",
+  "tissue": "bone"
+ },
+ {
+  "name": "Third lumbar vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA13074",
+  "tissue": "bone"
+ },
+ {
+  "name": "Third thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9209",
+  "tissue": "bone"
+ },
+ {
+  "name": "Twelfth thoracic vertebra",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA10081",
+  "tissue": "bone"
+ },
+ {
+  "name": "Vomer",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9710",
+  "tissue": "bone"
+ },
+ {
+  "name": "Xiphoid process",
+  "layer": "skeleton",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA7488",
+  "tissue": "bone"
+ },
+ {
+  "name": "External intercostal muscle",
+  "layer": "deep muscles",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA9756"
+ },
+ {
+  "name": "First lumbrical of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37718",
+  "group": "Left lumbricals of foot"
+ },
+ {
+  "name": "First lumbrical of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37717",
+  "group": "Right lumbricals of foot"
+ },
+ {
+  "name": "First plantar interosseous of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37746",
+  "group": "Left plantar interossei of foot"
+ },
+ {
+  "name": "First plantar interosseous of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37745",
+  "group": "Right plantar interossei of foot"
+ },
+ {
+  "name": "Flexor digiti minimi brevis of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37472"
+ },
+ {
+  "name": "Flexor digiti minimi brevis of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37471"
+ },
+ {
+  "name": "Fourth lumbrical of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37484",
+  "group": "Left lumbricals of foot"
+ },
+ {
+  "name": "Fourth lumbrical of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37483",
+  "group": "Right lumbricals of foot"
+ },
+ {
+  "name": "Lateral head of left flexor hallucis brevis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45974",
+  "group": "Left flexor hallucis brevis"
+ },
+ {
+  "name": "Lateral head of right flexor hallucis brevis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45973",
+  "group": "Right flexor hallucis brevis"
+ },
+ {
+  "name": "Left adductor brevis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22454"
+ },
+ {
+  "name": "Left adductor minimus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA43887"
+ },
+ {
+  "name": "Left corrugator supercilii",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left deep part of masseter",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left masseter"
+ },
+ {
+  "name": "Left extensor indicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38526"
+ },
+ {
+  "name": "Left flexor digitorum longus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA65017"
+ },
+ {
+  "name": "Left flexor digitorum profundus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38480"
+ },
+ {
+  "name": "Left flexor hallucis longus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA65015"
+ },
+ {
+  "name": "Left flexor pollicis longus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38484"
+ },
+ {
+  "name": "Left gemellus inferior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22337",
+  "group": "Left gemelli"
+ },
+ {
+  "name": "Left gemellus superior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22335",
+  "group": "Left gemelli"
+ },
+ {
+  "name": "Left gluteus minimus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22333"
+ },
+ {
+  "name": "Left iliacus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22323"
+ },
+ {
+  "name": "Left iliocostalis cervicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22745"
+ },
+ {
+  "name": "Left iliocostalis lumborum",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22741"
+ },
+ {
+  "name": "Left iliocostalis thoracis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22743"
+ },
+ {
+  "name": "Left inferior head of lateral pterygoid",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left lateral pterygoid"
+ },
+ {
+  "name": "Left internal oblique",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left longissimus capitis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22756"
+ },
+ {
+  "name": "Left longissimus cervicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22758"
+ },
+ {
+  "name": "Left longissimus thoracis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22753"
+ },
+ {
+  "name": "Left medial pterygoid",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left multifidus cervicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left multifidus"
+ },
+ {
+  "name": "Left multifidus lumborum",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left multifidus"
+ },
+ {
+  "name": "Left multifidus thoracis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left multifidus"
+ },
+ {
+  "name": "Left obliquus capitis inferior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32537",
+  "group": "Left suboccipital muscles"
+ },
+ {
+  "name": "Left obliquus capitis superior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32535",
+  "group": "Left suboccipital muscles"
+ },
+ {
+  "name": "Left obturator externus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22327"
+ },
+ {
+  "name": "Left obturator internus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22325"
+ },
+ {
+  "name": "Left opponens pollicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37391"
+ },
+ {
+  "name": "Left pectoralis minor",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13376"
+ },
+ {
+  "name": "Left piriformis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22341"
+ },
+ {
+  "name": "Left plantaris",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22561"
+ },
+ {
+  "name": "Left popliteus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22592"
+ },
+ {
+  "name": "Left pronator quadratus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38455"
+ },
+ {
+  "name": "Left psoas major",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22343"
+ },
+ {
+  "name": "Left quadratus femoris",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22339"
+ },
+ {
+  "name": "Left quadratus lumborum",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left rectus capitis posterior major",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32531",
+  "group": "Left suboccipital muscles"
+ },
+ {
+  "name": "Left rectus capitis posterior minor",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32533",
+  "group": "Left suboccipital muscles"
+ },
+ {
+  "name": "Left rhomboid major",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13382"
+ },
+ {
+  "name": "Left rhomboid minor",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13384"
+ },
+ {
+  "name": "Left rotatores",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left scalenus anterior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13393"
+ },
+ {
+  "name": "Left scalenus medius",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13391"
+ },
+ {
+  "name": "Left scalenus posterior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13389"
+ },
+ {
+  "name": "Left semispinalis capitis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22877"
+ },
+ {
+  "name": "Left semispinalis cervicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22875"
+ },
+ {
+  "name": "Left semispinalis thoracis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22873"
+ },
+ {
+  "name": "Left serratus posterior inferior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13406"
+ },
+ {
+  "name": "Left serratus posterior superior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13404"
+ },
+ {
+  "name": "Left spinalis thoracis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22780"
+ },
+ {
+  "name": "Left splenius cervicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22727"
+ },
+ {
+  "name": "Left subclavius",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13411"
+ },
+ {
+  "name": "Left subscapularis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13415"
+ },
+ {
+  "name": "Left superior head of lateral pterygoid",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left lateral pterygoid"
+ },
+ {
+  "name": "Left supinator",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38514"
+ },
+ {
+  "name": "Left supraspinatus",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32545"
+ },
+ {
+  "name": "Left tibialis posterior",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA65019"
+ },
+ {
+  "name": "Left transversus abdominis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left vastus intermedius",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38935"
+ },
+ {
+  "name": "Medial head of left flexor hallucis brevis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45972",
+  "group": "Left flexor hallucis brevis"
+ },
+ {
+  "name": "Medial head of right flexor hallucis brevis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45971",
+  "group": "Right flexor hallucis brevis"
+ },
+ {
+  "name": "Oblique head of left adductor hallucis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA46019",
+  "group": "Left adductor hallucis"
+ },
+ {
+  "name": "Oblique head of left adductor pollicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA46122",
+  "group": "Left adductor pollicis"
+ },
+ {
+  "name": "Oblique head of right adductor hallucis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA46018",
+  "group": "Right adductor hallucis"
+ },
+ {
+  "name": "Oblique head of right adductor pollicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA46121",
+  "group": "Right adductor pollicis"
+ },
+ {
+  "name": "Opponens digiti minimi of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA86035"
+ },
+ {
+  "name": "Opponens digiti minimi of left hand",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37401"
+ },
+ {
+  "name": "Opponens digiti minimi of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA86034"
+ },
+ {
+  "name": "Opponens digiti minimi of right hand",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37400"
+ },
+ {
+  "name": "Right adductor brevis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22452"
+ },
+ {
+  "name": "Right adductor minimus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA43886"
+ },
+ {
+  "name": "Right corrugator supercilii",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right deep part of masseter",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right masseter"
+ },
+ {
+  "name": "Right extensor indicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38525"
+ },
+ {
+  "name": "Right flexor digitorum longus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA65016"
+ },
+ {
+  "name": "Right flexor digitorum profundus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38479"
+ },
+ {
+  "name": "Right flexor hallucis longus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA65014"
+ },
+ {
+  "name": "Right flexor pollicis longus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38482"
+ },
+ {
+  "name": "Right gemellus inferior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22336",
+  "group": "Right gemelli"
+ },
+ {
+  "name": "Right gemellus superior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22334",
+  "group": "Right gemelli"
+ },
+ {
+  "name": "Right gluteus minimus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22332"
+ },
+ {
+  "name": "Right iliacus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22322"
+ },
+ {
+  "name": "Right iliocostalis cervicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22744"
+ },
+ {
+  "name": "Right iliocostalis lumborum",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22740"
+ },
+ {
+  "name": "Right iliocostalis thoracis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22742"
+ },
+ {
+  "name": "Right inferior head of lateral pterygoid",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right lateral pterygoid"
+ },
+ {
+  "name": "Right internal oblique",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right longissimus capitis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22754"
+ },
+ {
+  "name": "Right longissimus cervicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22757"
+ },
+ {
+  "name": "Right longissimus thoracis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22751"
+ },
+ {
+  "name": "Right medial pterygoid",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right multifidus cervicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right multifidus"
+ },
+ {
+  "name": "Right multifidus lumborum",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right multifidus"
+ },
+ {
+  "name": "Right multifidus thoracis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right multifidus"
+ },
+ {
+  "name": "Right obliquus capitis inferior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32536",
+  "group": "Right suboccipital muscles"
+ },
+ {
+  "name": "Right obliquus capitis superior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32534",
+  "group": "Right suboccipital muscles"
+ },
+ {
+  "name": "Right obturator externus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22326"
+ },
+ {
+  "name": "Right obturator internus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22324"
+ },
+ {
+  "name": "Right opponens pollicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37390"
+ },
+ {
+  "name": "Right pectoralis minor",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13375"
+ },
+ {
+  "name": "Right piriformis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22340"
+ },
+ {
+  "name": "Right plantaris",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22560"
+ },
+ {
+  "name": "Right popliteus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22591"
+ },
+ {
+  "name": "Right pronator quadratus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38454"
+ },
+ {
+  "name": "Right psoas major",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22342"
+ },
+ {
+  "name": "Right quadratus femoris",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22338"
+ },
+ {
+  "name": "Right quadratus lumborum",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right rectus capitis posterior major",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32530",
+  "group": "Right suboccipital muscles"
+ },
+ {
+  "name": "Right rectus capitis posterior minor",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32532",
+  "group": "Right suboccipital muscles"
+ },
+ {
+  "name": "Right rhomboid major",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13381"
+ },
+ {
+  "name": "Right rhomboid minor",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13383"
+ },
+ {
+  "name": "Right rotatores",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right scalenus anterior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13392"
+ },
+ {
+  "name": "Right scalenus medius",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13390"
+ },
+ {
+  "name": "Right scalenus posterior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13388"
+ },
+ {
+  "name": "Right semispinalis capitis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22876"
+ },
+ {
+  "name": "Right semispinalis cervicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22874"
+ },
+ {
+  "name": "Right semispinalis thoracis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22872"
+ },
+ {
+  "name": "Right serratus posterior inferior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13405"
+ },
+ {
+  "name": "Right serratus posterior superior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13403"
+ },
+ {
+  "name": "Right spinalis thoracis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22779"
+ },
+ {
+  "name": "Right splenius cervicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22726"
+ },
+ {
+  "name": "Right subclavius",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13412"
+ },
+ {
+  "name": "Right subscapularis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13414"
+ },
+ {
+  "name": "Right superior head of lateral pterygoid",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right lateral pterygoid"
+ },
+ {
+  "name": "Right supinator",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38513"
+ },
+ {
+  "name": "Right supraspinatus",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32544"
+ },
+ {
+  "name": "Right tibialis posterior",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA65018"
+ },
+ {
+  "name": "Right transversus abdominis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right vastus intermedius",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38934"
+ },
+ {
+  "name": "Second lumbrical of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37720",
+  "group": "Left lumbricals of foot"
+ },
+ {
+  "name": "Second lumbrical of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37719",
+  "group": "Right lumbricals of foot"
+ },
+ {
+  "name": "Second plantar interosseous of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37744",
+  "group": "Left plantar interossei of foot"
+ },
+ {
+  "name": "Second plantar interosseous of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37743",
+  "group": "Right plantar interossei of foot"
+ },
+ {
+  "name": "Set of palmar interossei of left hand",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA42403",
+  "group": "Left palmar interossei of hand"
+ },
+ {
+  "name": "Set of palmar interossei of right hand",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA42402",
+  "group": "Right palmar interossei of hand"
+ },
+ {
+  "name": "Short head of left biceps femoris",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45892"
+ },
+ {
+  "name": "Short head of right biceps femoris",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45891"
+ },
+ {
+  "name": "Third lumbrical of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37486",
+  "group": "Left lumbricals of foot"
+ },
+ {
+  "name": "Third lumbrical of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37485",
+  "group": "Right lumbricals of foot"
+ },
+ {
+  "name": "Third plantar interosseous of left foot",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37742",
+  "group": "Left plantar interossei of foot"
+ },
+ {
+  "name": "Third plantar interosseous of right foot",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37741",
+  "group": "Right plantar interossei of foot"
+ },
+ {
+  "name": "Transverse head of left adductor hallucis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA46021",
+  "group": "Left adductor hallucis"
+ },
+ {
+  "name": "Transverse head of left adductor pollicis",
+  "layer": "deep muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA46124",
+  "group": "Left adductor pollicis"
+ },
+ {
+  "name": "Transverse head of right adductor hallucis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA46020",
+  "group": "Right adductor hallucis"
+ },
+ {
+  "name": "Transverse head of right adductor pollicis",
+  "layer": "deep muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA46123",
+  "group": "Right adductor pollicis"
+ },
+ {
+  "name": "Abdominal part of left pectoralis major",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45875"
+ },
+ {
+  "name": "Abdominal part of right pectoralis major",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45874"
+ },
+ {
+  "name": "Abductor digiti minimi of left foot",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37464"
+ },
+ {
+  "name": "Abductor digiti minimi of left hand",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37397"
+ },
+ {
+  "name": "Abductor digiti minimi of right foot",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37463"
+ },
+ {
+  "name": "Abductor digiti minimi of right hand",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37396"
+ },
+ {
+  "name": "Acromial part of left deltoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA34683"
+ },
+ {
+  "name": "Acromial part of right deltoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA34682"
+ },
+ {
+  "name": "Ascending part of left trapezius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA33583"
+ },
+ {
+  "name": "Ascending part of right trapezius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA33581"
+ },
+ {
+  "name": "Clavicular part of left deltoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA34681"
+ },
+ {
+  "name": "Clavicular part of left pectoralis major",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA34691"
+ },
+ {
+  "name": "Clavicular part of right deltoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA34680"
+ },
+ {
+  "name": "Clavicular part of right pectoralis major",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA34690"
+ },
+ {
+  "name": "Descending part of left trapezius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA33587"
+ },
+ {
+  "name": "Descending part of right trapezius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA33586"
+ },
+ {
+  "name": "Flexor digiti minimi brevis of left hand",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37399"
+ },
+ {
+  "name": "Flexor digiti minimi brevis of right hand",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37398"
+ },
+ {
+  "name": "Flexor retinaculum of left wrist",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA40121"
+ },
+ {
+  "name": "Flexor retinaculum of right wrist",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA40120"
+ },
+ {
+  "name": "Humeral head of left flexor carpi ulnaris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38618"
+ },
+ {
+  "name": "Humeral head of left pronator teres",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38561"
+ },
+ {
+  "name": "Humeral head of right flexor carpi ulnaris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38617"
+ },
+ {
+  "name": "Humeral head of right pronator teres",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38560"
+ },
+ {
+  "name": "Lateral head of left gastrocnemius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45961"
+ },
+ {
+  "name": "Lateral head of left triceps brachii",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37698"
+ },
+ {
+  "name": "Lateral head of right gastrocnemius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45960"
+ },
+ {
+  "name": "Lateral head of right triceps brachii",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37697"
+ },
+ {
+  "name": "Left abductor hallucis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37460"
+ },
+ {
+  "name": "Left abductor pollicis brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37387"
+ },
+ {
+  "name": "Left abductor pollicis longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38517"
+ },
+ {
+  "name": "Left adductor longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22457"
+ },
+ {
+  "name": "Left adductor magnus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22460"
+ },
+ {
+  "name": "Left anconeus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37706"
+ },
+ {
+  "name": "Left brachialis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37669"
+ },
+ {
+  "name": "Left brachioradialis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38487"
+ },
+ {
+  "name": "Left calcaneal tendon",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA264844"
+ },
+ {
+  "name": "Left coracobrachialis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37666"
+ },
+ {
+  "name": "Left depressor anguli oris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left depressor labii inferioris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left extensor carpi radialis brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38499"
+ },
+ {
+  "name": "Left extensor carpi radialis longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38496"
+ },
+ {
+  "name": "Left extensor carpi ulnaris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38508"
+ },
+ {
+  "name": "Left extensor carpi ulnaris (2)",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38508"
+ },
+ {
+  "name": "Left extensor digiti minimi",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38505"
+ },
+ {
+  "name": "Left extensor digitorum",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38502"
+ },
+ {
+  "name": "Left extensor digitorum longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22549"
+ },
+ {
+  "name": "Left extensor hallucis brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA51145"
+ },
+ {
+  "name": "Left extensor hallucis longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22547"
+ },
+ {
+  "name": "Left extensor pollicis brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38520"
+ },
+ {
+  "name": "Left extensor pollicis longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38523"
+ },
+ {
+  "name": "Left external oblique",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13337"
+ },
+ {
+  "name": "Left fibularis brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22555"
+ },
+ {
+  "name": "Left fibularis longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22553"
+ },
+ {
+  "name": "Left fibularis tertius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22551"
+ },
+ {
+  "name": "Left flexor carpi radialis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38461"
+ },
+ {
+  "name": "Left flexor digitorum brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37462"
+ },
+ {
+  "name": "Left flexor digitorum superficialis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38471"
+ },
+ {
+  "name": "Left flexor digitorum superficialis (2)",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38471"
+ },
+ {
+  "name": "Left flexor pollicis brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37389"
+ },
+ {
+  "name": "Left frontalis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left gluteus maximus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22329"
+ },
+ {
+  "name": "Left gluteus medius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22331"
+ },
+ {
+  "name": "Left gracilis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA43884"
+ },
+ {
+  "name": "Left iliotibial tract",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA58777"
+ },
+ {
+  "name": "Left infraspinatus muscle",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32548"
+ },
+ {
+  "name": "Left latissimus dorsi",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left levator labii superioris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left levator scapulae",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32541"
+ },
+ {
+  "name": "Left mentalis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left nasalis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left omohyoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13349",
+  "group": "Left infrahyoid muscles"
+ },
+ {
+  "name": "Left orbicularis oris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left orbital part of orbicularis oculi",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left orbicularis oculi"
+ },
+ {
+  "name": "Left palmaris longus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38464"
+ },
+ {
+  "name": "Left palpebral part of orbicularis oculi",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left orbicularis oculi"
+ },
+ {
+  "name": "Left pectineus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22451"
+ },
+ {
+  "name": "Left posterior layer of thoracolumbar fascia",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left thoracolumbar fascia"
+ },
+ {
+  "name": "Left procerus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left rectus abdominis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left rectus femoris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38929"
+ },
+ {
+  "name": "Left risorius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left sartorius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22355"
+ },
+ {
+  "name": "Left semimembranosus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22449"
+ },
+ {
+  "name": "Left semitendinosus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22359"
+ },
+ {
+  "name": "Left serratus anterior",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13399"
+ },
+ {
+  "name": "Left soleus",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22559"
+ },
+ {
+  "name": "Left splenius capitis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22729"
+ },
+ {
+  "name": "Left sternocleidomastoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13409"
+ },
+ {
+  "name": "Left sternohyoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13347",
+  "group": "Left infrahyoid muscles"
+ },
+ {
+  "name": "Left sternothyroid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13351",
+  "group": "Left infrahyoid muscles"
+ },
+ {
+  "name": "Left superficial part of masseter",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy",
+  "group": "Left masseter"
+ },
+ {
+  "name": "Left temporalis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left tensor fasciae latae",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22426"
+ },
+ {
+  "name": "Left teres major",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32552"
+ },
+ {
+  "name": "Left teres minor",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA32554"
+ },
+ {
+  "name": "Left thyrohyoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA13353",
+  "group": "Left infrahyoid muscles"
+ },
+ {
+  "name": "Left tibialis anterior",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA22545"
+ },
+ {
+  "name": "Left vastus lateralis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38931"
+ },
+ {
+  "name": "Left vastus medialis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38933"
+ },
+ {
+  "name": "Left zygomaticus major",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Left zygomaticus minor",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Linea alba",
+  "layer": "superficial muscles",
+  "side": "midline",
+  "source": "BodyParts3D",
+  "fma": "FMA11336"
+ },
+ {
+  "name": "Long head of left biceps brachii",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37687"
+ },
+ {
+  "name": "Long head of left biceps femoris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45889"
+ },
+ {
+  "name": "Long head of left triceps brachii",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37700"
+ },
+ {
+  "name": "Long head of right biceps brachii",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37686"
+ },
+ {
+  "name": "Long head of right biceps femoris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45888"
+ },
+ {
+  "name": "Long head of right triceps brachii",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37699"
+ },
+ {
+  "name": "Medial head of left gastrocnemius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA45958"
+ },
+ {
+  "name": "Medial head of left triceps brachii",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37696"
+ },
+ {
+  "name": "Medial head of right gastrocnemius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA45957"
+ },
+ {
+  "name": "Medial head of right triceps brachii",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37695"
+ },
+ {
+  "name": "Right abductor hallucis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37459"
+ },
+ {
+  "name": "Right abductor pollicis brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37386"
+ },
+ {
+  "name": "Right abductor pollicis longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38516"
+ },
+ {
+  "name": "Right adductor longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22456"
+ },
+ {
+  "name": "Right adductor magnus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22459"
+ },
+ {
+  "name": "Right anconeus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37705"
+ },
+ {
+  "name": "Right brachialis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37668"
+ },
+ {
+  "name": "Right brachioradialis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38486"
+ },
+ {
+  "name": "Right calcaneal tendon",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA258847"
+ },
+ {
+  "name": "Right coracobrachialis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37665"
+ },
+ {
+  "name": "Right depressor anguli oris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right depressor labii inferioris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right extensor carpi radialis brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38498"
+ },
+ {
+  "name": "Right extensor carpi radialis longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38495"
+ },
+ {
+  "name": "Right extensor carpi ulnaris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38507"
+ },
+ {
+  "name": "Right extensor carpi ulnaris (2)",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38507"
+ },
+ {
+  "name": "Right extensor digiti minimi",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38504"
+ },
+ {
+  "name": "Right extensor digitorum",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38501"
+ },
+ {
+  "name": "Right extensor digitorum longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22548"
+ },
+ {
+  "name": "Right extensor hallucis brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA51144"
+ },
+ {
+  "name": "Right extensor hallucis longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22546"
+ },
+ {
+  "name": "Right extensor pollicis brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38519"
+ },
+ {
+  "name": "Right extensor pollicis longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38522"
+ },
+ {
+  "name": "Right external oblique",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13336"
+ },
+ {
+  "name": "Right fibularis brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22554"
+ },
+ {
+  "name": "Right fibularis longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22552"
+ },
+ {
+  "name": "Right fibularis tertius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22550"
+ },
+ {
+  "name": "Right flexor carpi radialis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38460"
+ },
+ {
+  "name": "Right flexor digitorum brevis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37461"
+ },
+ {
+  "name": "Right flexor digitorum superficialis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38470"
+ },
+ {
+  "name": "Right flexor digitorum superficialis (2)",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38470"
+ },
+ {
+  "name": "Right flexor pollicis brevis",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37388"
+ },
+ {
+  "name": "Right frontalis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right gluteus maximus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22328"
+ },
+ {
+  "name": "Right gluteus medius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22330"
+ },
+ {
+  "name": "Right gracilis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA43883"
+ },
+ {
+  "name": "Right iliotibial tract",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA58776"
+ },
+ {
+  "name": "Right infraspinatus muscle",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32547"
+ },
+ {
+  "name": "Right latissimus dorsi",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right levator labii superioris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right levator scapulae",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32540"
+ },
+ {
+  "name": "Right mentalis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right nasalis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right omohyoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13348",
+  "group": "Right infrahyoid muscles"
+ },
+ {
+  "name": "Right orbicularis oris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right orbital part of orbicularis oculi",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right orbicularis oculi"
+ },
+ {
+  "name": "Right palmaris longus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38463"
+ },
+ {
+  "name": "Right palpebral part of orbicularis oculi",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right orbicularis oculi"
+ },
+ {
+  "name": "Right pectineus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22450"
+ },
+ {
+  "name": "Right posterior layer of thoracolumbar fascia",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right thoracolumbar fascia"
+ },
+ {
+  "name": "Right procerus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right rectus abdominis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right rectus femoris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38928"
+ },
+ {
+  "name": "Right risorius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right sartorius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22354"
+ },
+ {
+  "name": "Right semimembranosus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22448"
+ },
+ {
+  "name": "Right semitendinosus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22358"
+ },
+ {
+  "name": "Right serratus anterior",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13398"
+ },
+ {
+  "name": "Right soleus",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22558"
+ },
+ {
+  "name": "Right splenius capitis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22728"
+ },
+ {
+  "name": "Right sternocleidomastoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13408"
+ },
+ {
+  "name": "Right sternohyoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13346",
+  "group": "Right infrahyoid muscles"
+ },
+ {
+  "name": "Right sternothyroid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13350",
+  "group": "Right infrahyoid muscles"
+ },
+ {
+  "name": "Right superficial part of masseter",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy",
+  "group": "Right masseter"
+ },
+ {
+  "name": "Right temporalis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right tensor fasciae latae",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22425"
+ },
+ {
+  "name": "Right teres major",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32551"
+ },
+ {
+  "name": "Right teres minor",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA32553"
+ },
+ {
+  "name": "Right thyrohyoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA13352",
+  "group": "Right infrahyoid muscles"
+ },
+ {
+  "name": "Right tibialis anterior",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA22544"
+ },
+ {
+  "name": "Right vastus lateralis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38930"
+ },
+ {
+  "name": "Right vastus medialis",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38932"
+ },
+ {
+  "name": "Right zygomaticus major",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Right zygomaticus minor",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "Z-Anatomy"
+ },
+ {
+  "name": "Set of dorsal interossei of left hand",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA42405",
+  "group": "Left dorsal interossei of hand"
+ },
+ {
+  "name": "Set of dorsal interossei of right hand",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA42404",
+  "group": "Right dorsal interossei of hand"
+ },
+ {
+  "name": "Set of lumbricals of left hand",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA42399",
+  "group": "Left lumbricals of hand"
+ },
+ {
+  "name": "Set of lumbricals of right hand",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA42398",
+  "group": "Right lumbricals of hand"
+ },
+ {
+  "name": "Short head of left biceps brachii",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA37685"
+ },
+ {
+  "name": "Short head of right biceps brachii",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA37684"
+ },
+ {
+  "name": "Spinal part of left deltoid",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA34685"
+ },
+ {
+  "name": "Spinal part of right deltoid",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA34684"
+ },
+ {
+  "name": "Sternocostal part of left pectoralis major",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA79980"
+ },
+ {
+  "name": "Sternocostal part of right pectoralis major",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA79979"
+ },
+ {
+  "name": "Transverse part of left trapezius",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA33585"
+ },
+ {
+  "name": "Transverse part of right trapezius",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA33584"
+ },
+ {
+  "name": "Ulnar head of left flexor carpi ulnaris",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38620"
+ },
+ {
+  "name": "Ulnar head of left pronator teres",
+  "layer": "superficial muscles",
+  "side": "left",
+  "source": "BodyParts3D",
+  "fma": "FMA38563"
+ },
+ {
+  "name": "Ulnar head of right flexor carpi ulnaris",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38619"
+ },
+ {
+  "name": "Ulnar head of right pronator teres",
+  "layer": "superficial muscles",
+  "side": "right",
+  "source": "BodyParts3D",
+  "fma": "FMA38562"
+ }
+]

@@ -1,0 +1,101 @@
+.muscle-explorer{padding:43px 0 20px}
+.muscle-page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:27px}
+.muscle-page-heading h1{font-size:32px;letter-spacing:-.8px;line-height:1.5;margin:12px 0 8px;outline:none;color:#30452c}
+.muscle-page-heading>div>p{font-size:13px;line-height:1.9;color:#89967c;margin:0;max-width:550px}
+.muscle-workspace{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(285px,.85fr);gap:23px;align-items:start}
+.body-model-column{min-width:0}
+.body-scene-card{border:1px solid #dce4d2;border-radius:16px;overflow:hidden;background:#f0f3e8;box-shadow:0 6px 30px #344a2504}
+.body-scene-toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 17px;border-bottom:1px solid #e0e6d7;background:#f7f9f1}
+.body-scene-toolbar>span{display:flex;align-items:center;gap:6px;font-size:11px;color:#8a997b;line-height:1.7}
+.body-scene-toolbar i{width:5px;height:5px;border-radius:50%;background:#8da479;flex-shrink:0}
+.body-scene-toolbar>div{display:flex;gap:3px;flex-shrink:0}
+.body-scene-toolbar button{border:1px solid transparent;background:transparent;font-size:11px;min-width:36px;min-height:34px;color:#8b987e;padding:5px 6px;border-radius:6px}
+.body-scene-toolbar button[aria-pressed=true]{border-color:#d8e2c9;background:#e8efdc;color:#526d40}
+.body-scene{height:555px;position:relative;width:100%;background:radial-gradient(ellipse at 50% 44%,#fcfdf6 0%,#f2f5e9 57%,#ecf0e2 100%)}
+.body-scene:before{content:"";position:absolute;bottom:26px;left:30%;width:40%;height:14px;border-radius:50%;background:#66804c15;filter:blur(6px)}
+.body-scene>canvas{position:relative;display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+.model-loading{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:13px;padding:26px;text-align:center;z-index:2;background:#f3f6ec;color:#82936e}
+.model-loading>b{font-size:15px;font-weight:550}
+.model-loading>span:last-child{font-size:11px;color:#a0ab94}
+.model-loading>.spinner{width:25px;height:25px;border-width:2px}
+.model-error p{font-size:12px;line-height:1.9;max-width:310px;margin:0}
+.model-hover-label{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);border:1px solid #d8e3ca;background:#fbfff4e8;border-radius:25px;padding:8px 16px;white-space:nowrap;font-size:12px;color:#748761;pointer-events:none;z-index:2;box-shadow:0 4px 16px #47633508}
+.body-scene-hint{padding:14px 17px;margin:0;border-top:1px solid #e1e7d8;font-size:11px;color:#8b997c;line-height:1.8;text-align:center;background:#f7f9f1}
+.body-scene-hint>span{display:block;font-size:10px;color:#a2ad95;margin-top:3px}
+.model-module-loading{height:650px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:13px;color:#8b9b7b}
+.model-credits{font-size:10px;color:#9ca88e;margin:13px 4px 0;line-height:1.9}
+.model-credits>summary{cursor:pointer;min-height:30px;padding:4px 0}
+.model-credits p{margin:7px 0;color:#8b987e}
+.model-credits a{margin-right:14px;text-decoration:underline;text-underline-offset:3px}
+.muscle-picker,.muscle-target-card{background:#fffefa;border:1px solid #dde4d3;border-radius:15px;padding:24px 21px}
+.muscle-picker-title .eyebrow{font-size:9px;letter-spacing:1.3px}
+.muscle-picker-title h2{font-size:20px;color:#435a37;margin:8px 0}
+.muscle-picker-title p{font-size:11px;color:#96a286;margin-bottom:18px}
+.muscle-region-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:4px;background:#f4f6ee;border-radius:8px;margin-bottom:15px}
+.muscle-region-tabs button{border:1px solid transparent;background:transparent;border-radius:6px;color:#9aa68b;font-size:11px;min-height:35px;padding:5px 4px}
+.muscle-region-tabs button.active{background:#fffefa;border-color:#dce5ce;color:#5e794b;box-shadow:0 2px 5px #41542e05}
+.muscle-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.muscle-choice-grid button{display:flex;flex-direction:column;text-align:left;position:relative;gap:5px;background:#fafcf5;border:1px solid #e1e8d7;border-radius:8px;padding:13px 10px;min-height:77px;color:#627b4f}
+.muscle-choice-grid button:hover,.muscle-choice-grid button.pending{background:#edf3e2;border-color:#c8d8b4}
+.muscle-choice-grid span{font-size:13px;font-weight:600;line-height:1.6}
+.muscle-choice-grid small{font-size:9px;color:#9ba98b;line-height:1.7}
+.muscle-choice-grid i{position:absolute;right:8px;top:9px;font-size:11px;font-style:normal;color:#a0b18d}
+.muscle-picker-note{font-size:10px;color:#9eaa8f;line-height:1.85;margin:16px 0 0}
+.target-confirmed{display:inline-flex;gap:5px;color:#77955d;background:#edf3e3;border:1px solid #dce7cc;border-radius:6px;padding:4px 8px;font-size:11px}
+.muscle-target-card h2{font-size:30px;margin:18px 0 5px;line-height:1.5;color:#405b32}
+.target-position{font-size:13px;color:#94a180;margin:0 0 22px}
+.muscle-target-card dl{margin:0;border-top:1px solid #e6ebdd}
+.muscle-target-card dl>div{padding:16px 0;border-bottom:1px solid #e6ebdd}
+.muscle-target-card dt{font-size:11px;color:#a2ad94;margin-bottom:7px}
+.muscle-target-card dd{margin:0;font-size:14px;color:#627b50;line-height:1.9}
+.target-note{background:#f5f8ed;border-radius:9px;padding:16px;margin:22px 0}
+.target-note b{font-size:13px;font-weight:550;color:#71865b}
+.target-note p{font-size:12px;line-height:1.9;margin:7px 0 0;color:#99a68b}
+.muscle-target-card>.button{width:100%;min-height:45px}
+.muscle-confirm{border:1px solid #d8e2cb;border-radius:20px;box-shadow:0 18px 100px #1b331b33;padding:31px;width:430px;max-width:calc(100vw - 32px);color:#49633b;background:#fffef8;overflow:auto;max-height:calc(100dvh - 40px)}
+.muscle-confirm::backdrop{background:#20302069;backdrop-filter:blur(4px)}
+.confirmation-eyebrow{display:block;font-size:11px;letter-spacing:1.4px;color:#9bac89;text-align:center}
+.confirmation-mark{margin:22px auto 15px;display:grid;place-items:center;width:53px;height:53px;background:#eaf2df;border:1px solid #dbe8c7;border-radius:50%;font-size:23px;color:#82a267}
+.muscle-confirm h2{font-size:16px;font-weight:400;color:#8b9c7a;line-height:1.7;text-align:center;margin:0 0 16px}
+.muscle-confirm h2>span{display:block;font-size:30px;font-weight:650;color:#466236;margin-top:5px}
+.muscle-confirm>p{font-size:13px;line-height:1.9;text-align:center;color:#92a080;margin-bottom:20px}
+.confirm-structure{font-size:10px;color:#a8b298;border-top:1px solid #e7ecdf;border-bottom:1px solid #e7ecdf;padding:12px 0;line-height:1.8}
+.confirm-structure>span{display:block;font-size:12px;color:#81956d;margin-top:5px}
+.muscle-confirm-actions{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;margin-top:24px}
+.muscle-confirm-actions button{font-size:12px;min-height:46px;padding:11px 8px;white-space:normal}
+@media(min-width:1500px){.body-scene{height:610px}.muscle-choice-grid button{min-height:83px}}
+@media(max-width:1050px) and (min-width:761px){.muscle-workspace{grid-template-columns:minmax(0,1fr)}.muscle-choice-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.body-scene{height:540px}.muscle-page-heading{align-items:flex-start}.muscle-page-heading h1{font-size:28px}.muscle-page-heading .reselect-muscle{font-size:11px;padding:10px}}
+@media(max-width:760px){
+ .muscle-explorer{padding:28px 0 14px}
+ .muscle-page-heading{margin-bottom:20px;display:block}
+ .muscle-page-heading .eyebrow{font-size:9px;letter-spacing:1px}
+ .muscle-page-heading h1{font-size:27px;margin:11px 0 8px}
+ .muscle-page-heading>div>p{font-size:12px;line-height:1.9}
+ .muscle-workspace{grid-template-columns:minmax(0,1fr);gap:20px}
+ .body-scene-card{border-radius:13px}
+ .body-scene-toolbar{padding:11px 12px;gap:7px}
+ .body-scene-toolbar>span{font-size:10px;gap:5px}
+ .body-scene-toolbar button{font-size:11px;min-height:38px;min-width:35px}
+ .body-scene{height:440px}
+ .body-scene-hint{font-size:10px;padding:12px}
+ .body-scene-hint>span{font-size:9px}
+ .model-hover-label{font-size:11px;padding:7px 12px}
+ .model-module-loading{height:550px}
+ .muscle-picker,.muscle-target-card{padding:22px 18px}
+ .muscle-picker-title h2{font-size:20px}
+ .muscle-picker-title p{font-size:12px}
+ .muscle-region-tabs button{font-size:12px;min-height:40px}
+ .muscle-choice-grid{gap:9px}
+ .muscle-choice-grid button{padding:15px 12px;min-height:83px}
+ .muscle-choice-grid span{font-size:14px}
+ .muscle-choice-grid small{font-size:11px}
+ .muscle-picker-note{font-size:11px}
+ .reselect-muscle{font-size:12px;margin-top:17px;min-height:42px}
+ .muscle-target-card h2{font-size:28px}
+ .target-note p{font-size:12px}
+ .model-credits{font-size:10px}
+ .muscle-confirm{padding:25px 23px}
+ .muscle-confirm-actions{grid-template-columns:1fr 1.4fr;gap:9px}
+ .muscle-confirm-actions button{font-size:12px}
+}
+@media(max-width:370px){.body-scene{height:410px}.body-scene-toolbar>span{max-width:120px}.muscle-confirm{padding:24px 19px}}

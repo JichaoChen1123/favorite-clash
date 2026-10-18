@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/Charleeh/ecorche",
+  "commit": "320805e06aee51e2e6f6b22533eb2a59d43f2d4d",
+  "model_license": "CC BY-SA 4.0",
+  "files": [
+    {
+      "source": "model/ecorche.meshopt.glb",
+      "local": "frontend/public/models/ecorche/ecorche.meshopt.glb",
+      "bytes": 6004016,
+      "sha256": "cc43a8b4f218bee5da78d6c1746bd21470d1d93c6878e33b4ccdbcfc7a72b98e"
+    },
+    {
+      "source": "model/ecorche.structures.json",
+      "local": "frontend/public/models/ecorche/ecorche.structures.json",
+      "bytes": 96243,
+      "sha256": "c0705d69007acad8620541998329b904daca4995cb5790eeac63344544f56a29"
+    },
+    {
+      "source": "LICENSE.md",
+      "local": "frontend/public/models/ecorche/LICENSE.md",
+      "bytes": 984,
+      "sha256": "e6667796c721c8e6d25bb474de56ca5ed8436e097c36eb1d813e12e267ceb30e"
+    },
+    {
+      "source": "ATTRIBUTION.md",
+      "local": "frontend/public/models/ecorche/ATTRIBUTION.md",
+      "bytes": 4731,
+      "sha256": "a8ab15675197a2423728b50ef641f1a5be0be736bfe6737318bacd0c34efb431"
+    },
+    {
+      "source": "LICENSES/CC-BY-SA-4.0.txt",
+      "local": "frontend/public/models/ecorche/LICENSES/CC-BY-SA-4.0.txt",
+      "bytes": 20210,
+      "sha256": "258ed63e18dedbb7183b2098bdc04e363301ba58bc6aaaf90dd00f4faf198680"
+    },
+    {
+      "source": "LICENSES/MIT.txt",
+      "local": "frontend/public/models/ecorche/LICENSES/MIT.txt",
+      "bytes": 1065,
+      "sha256": "e8723d0b115cc4cb5b2db10777c9ea9298ef6245b40c94300003a5038b75292e"
+    }
+  ],
+  "local_changes": "Original asset bytes preserved. Runtime grouping, coloring and selection are application behavior."
+}

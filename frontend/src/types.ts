@@ -1,0 +1,11 @@
+export type Page = { page: number; cid: number; title: string; duration: number; url: string };
+export type Video = { bvid: string; title: string; author: string; url: string; pages: Page[] };
+export type Segment = { id: string; start: number; end: number; text: string };
+export type Source = { id: string; url: string; bvid: string; page: number; cid: number; title: string; author: string; duration: number; status: 'pending' | 'fetching' | 'ready' | 'failed'; error: string | null; transcript_kind: 'subtitle' | 'asr' | 'uploaded' | null; segments: Segment[] };
+export type Evidence = { source_id: string; segment_id: string; text: string; start: number; end: number; url: string; context: Segment[] };
+export type Perspective = { source_id: string; statement: string; audience: string; goal: string; conditions: string; limitations: string; evidence: Evidence[] };
+export type Classification = 'agreement' | 'different_conditions' | 'conflict' | 'insufficient' | 'different_topic';
+export type Comparison = { id: string; topic: string; classification: Classification; explanation: string; perspectives: Perspective[] };
+export type Result = { overview: string; comparisons: Comparison[]; open_questions: string[] };
+export type Job = { id: string; question: string; status: 'queued' | 'running' | 'completed' | 'failed' | 'interrupted'; stage: string; progress: number; created_at: string; updated_at: string; error: string | null; sources: Source[]; result: Result | null; feedback: unknown[]; model: string; prompt_version: string };
+export type Health = { status: string; provider: string; model: string; provider_ready: boolean; ffmpeg_ready: boolean };

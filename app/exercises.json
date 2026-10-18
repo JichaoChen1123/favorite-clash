@@ -1,0 +1,445 @@
+{
+  "version": "2026-10-18.catalog-v1",
+  "reviewed_at": "2026-10-18",
+  "note": "中文要点根据Mayo Clinic资料整理，非完整翻译；另提供B站中文演示，视频作者与文字资料独立，可能包含其他变式。肌群映射用于浏览。",
+  "items": [
+    {
+      "id": "kneeling-pushup",
+      "name": "跪姿俯卧撑",
+      "english": "Modified pushup",
+      "category": "胸部",
+      "equipment": "bodyweight",
+      "requires": "瑜伽垫或防滑地面",
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "triceps",
+        "abs"
+      ],
+      "focus": "胸大肌为主，上臂后侧参与，核心维持躯干稳定。",
+      "summary": "用膝盖支撑的推举动作，先练习稳定身体和控制下降。",
+      "setup": "双手撑地，间距略宽于肩，双膝落地，目光向下，收紧腹部。",
+      "steps": [
+        "身体保持成一直线，缓慢屈肘，让胸部靠近地面。",
+        "平稳推回起始位置，保持腹部紧张。",
+        "全程控制节奏，再开始下一次。"
+      ],
+      "mistakes": [
+        "腰部下塌，或抬高臀部代替胸部下降。",
+        "身体快速砸向地面，再用反弹推起。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Modified pushup",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/modified-pushup/vid-20084674",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "小五聊运动",
+        "title": "跪姿俯卧撑最详细动作讲解",
+        "part_title": "跪姿俯卧撑最详细动作讲解",
+        "page": 1,
+        "duration": 155,
+        "url": "https://www.bilibili.com/video/BV1pN4y157rD/?p=1",
+        "bvid": "BV1pN4y157rD",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "dumbbell-chest-press",
+      "name": "哑铃卧推",
+      "english": "Chest press with dumbbell",
+      "category": "胸部",
+      "equipment": "dumbbell",
+      "requires": "一对哑铃、平凳或地面",
+      "primary": [
+        "chest"
+      ],
+      "secondary": [],
+      "focus": "以胸前侧胸大肌为主要浏览目标。",
+      "summary": "仰卧将哑铃向上推起，用可控幅度练习胸部推举。",
+      "setup": "仰卧握住两只哑铃，上臂向两侧展开，前臂朝上，头颈放松。",
+      "steps": [
+        "平稳向上推哑铃，直到手肘接近伸直。",
+        "控制下降，上臂不要落到躯干水平线以下。",
+        "维持头颈中立，再平稳推起。"
+      ],
+      "mistakes": [
+        "下降过深，手肘越过躯干后侧。",
+        "顶端锁死手肘，或用脚猛蹬来推动哑铃。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Chest press with dumbbell",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/chest-press/vid-20084677",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "凯圣王",
+        "title": "哑铃平板卧推详解",
+        "part_title": "哑铃平板卧推详解",
+        "page": 1,
+        "duration": 584,
+        "url": "https://www.bilibili.com/video/BV1mD421J7o3/?p=1",
+        "bvid": "BV1mD421J7o3",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "machine-chest-press",
+      "name": "器械推胸",
+      "english": "Chest press with weight machine",
+      "category": "胸部",
+      "equipment": "machine",
+      "requires": "坐姿推胸器械",
+      "primary": [
+        "chest"
+      ],
+      "secondary": [],
+      "focus": "主要训练胸前侧胸大肌。",
+      "summary": "沿器械轨迹向前推握把，先调整座椅让发力位置合适。",
+      "setup": "调整座椅，让握把位于肩部高度或略低处，背部自然贴靠。",
+      "steps": [
+        "缓慢向前推握把，让手肘接近伸直。",
+        "控制握把回到胸前，直到上臂回到身体两侧。",
+        "保持躯干稳定，平顺重复。"
+      ],
+      "mistakes": [
+        "推起时弓腰，或顶端把手肘锁死。",
+        "回程过深，让手肘退到躯干后方。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Chest press with weight machine",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/chest-press/vid-20084687",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "健身教练刘远",
+        "title": "坐姿推胸器细节讲解，固定器械胸部训练技巧",
+        "part_title": "2020-10-23 181026",
+        "page": 1,
+        "duration": 231,
+        "url": "https://www.bilibili.com/video/BV1PZ4y1V7A7/?p=1",
+        "bvid": "BV1PZ4y1V7A7",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "dumbbell-bent-row",
+      "name": "哑铃俯身划船",
+      "english": "Bent-over row with dumbbell",
+      "category": "背部",
+      "equipment": "dumbbell",
+      "requires": "哑铃",
+      "primary": [
+        "upper-back"
+      ],
+      "secondary": [
+        "shoulders"
+      ],
+      "focus": "来源演示侧重肩后侧与上背部；不代表肩背整组每个结构都同等参与。",
+      "summary": "保持俯身姿势，将手肘向后上方带动，控制哑铃回落。",
+      "setup": "双脚自然分开，握住哑铃，微屈膝，从髋部俯身并收紧腹部。",
+      "steps": [
+        "手臂从肩部下方垂下，缓慢将哑铃提起。",
+        "手肘上移至接近躯干水平，肩部保持稳定。",
+        "缓慢放回，保持背部自然中立。"
+      ],
+      "mistakes": [
+        "拉起时让肩膀向前翻滚。",
+        "靠甩动身体带起重量，或弯曲腰背。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Bent-over row with dumbbell",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/bent-over-row/vid-20084680",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "健身教练张旭",
+        "title": "哑铃俯身划船详细教程",
+        "part_title": "哑铃俯身划船详细教程",
+        "page": 1,
+        "duration": 47,
+        "url": "https://www.bilibili.com/video/BV1kT4y1Z7Pz/?p=1",
+        "bvid": "BV1kT4y1Z7Pz",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "lat-pulldown",
+      "name": "高位下拉",
+      "english": "Lat pull-down with weight machine",
+      "category": "背部",
+      "equipment": "machine",
+      "requires": "高位下拉器械",
+      "primary": [
+        "lats"
+      ],
+      "secondary": [],
+      "focus": "以背部两侧的背阔肌为主。",
+      "summary": "把横杆向胸前拉，留意肩背控制和自己的活动幅度。",
+      "setup": "坐稳，双手握杆，握距略宽于肩，挺起胸部。",
+      "steps": [
+        "缓慢将横杆拉向胸前，手肘向下后方移动。",
+        "到手肘无法继续后移的位置即可，不必强求杆碰胸。",
+        "控制还原到起始位置。"
+      ],
+      "mistakes": [
+        "把杆拉到颈后。",
+        "用快速摆动代替背部控制。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Lat pull-down with weight machine",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/lat-pull-down/vid-20084683",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "ACE宋健鹏",
+        "title": "高位下拉动作全面解析。",
+        "part_title": "高位下拉动作全面解析。",
+        "page": 1,
+        "duration": 258,
+        "url": "https://www.bilibili.com/video/BV1usAJeuEQa/?p=1",
+        "bvid": "BV1usAJeuEQa",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "seated-cable-row",
+      "name": "坐姿绳索划船",
+      "english": "Seated row with weight machine",
+      "category": "背部",
+      "equipment": "machine",
+      "requires": "坐姿划船器械",
+      "primary": [
+        "upper-back",
+        "lats"
+      ],
+      "secondary": [],
+      "focus": "以上背部与背阔肌为主要浏览目标。",
+      "summary": "坐稳后把握把拉向腰部，感受肩胛随动作回收。",
+      "setup": "坐在器械上，膝盖保持弯曲，握住把手，手臂向前伸展。",
+      "steps": [
+        "缓慢将握把拉向腰部，让手肘弯曲并向后移动。",
+        "肩部随动作向后收，身体不大幅摆动。",
+        "控制返回，起始端只保留轻微牵拉感。"
+      ],
+      "mistakes": [
+        "起始时身体前倾过多，过度拉伸。",
+        "用前后摆动身体代替平稳拉动。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Seated row with weight machine",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/seated-row/vid-20084688",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "小强小齐",
+        "title": "练背核心动作--坐姿划船动作讲解",
+        "part_title": "",
+        "page": 1,
+        "duration": 396,
+        "url": "https://www.bilibili.com/video/BV14W411g7FN/?p=1",
+        "bvid": "BV14W411g7FN",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "bodyweight-squat",
+      "name": "徒手深蹲",
+      "english": "Squat exercise",
+      "category": "腿部",
+      "equipment": "bodyweight",
+      "requires": "防滑地面",
+      "primary": [
+        "quads",
+        "glutes"
+      ],
+      "secondary": [],
+      "focus": "主要浏览大腿前侧与臀部；动作涉及多个下肢肌群。",
+      "summary": "用自身体重练习下蹲与站起，先掌握稳定的动作幅度。",
+      "setup": "双脚略宽于肩，腹部收紧，背部保持自然中立。",
+      "steps": [
+        "髋、膝和踝共同弯曲，缓慢降低身体。",
+        "膝盖沿脚部方向移动，在自己能控制的范围内下蹲。",
+        "平稳站起；动作开始变形时结束这一轮。"
+      ],
+      "mistakes": [
+        "膝盖向内塌，或明显偏离脚部方向。",
+        "下蹲时腰背过度弯曲或反弓。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Squat exercise",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/squat/vid-20084663",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "康老师特别细",
+        "title": "【徒手深蹲教学】全网最细",
+        "part_title": "【徒手深蹲教学】全网最细",
+        "page": 1,
+        "duration": 418,
+        "url": "https://www.bilibili.com/video/BV1Ae4y1o7xv/?p=1",
+        "bvid": "BV1Ae4y1o7xv",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "dumbbell-squat",
+      "name": "哑铃深蹲",
+      "english": "Squat with dumbbell",
+      "category": "腿部",
+      "equipment": "dumbbell",
+      "requires": "一对哑铃",
+      "primary": [
+        "quads",
+        "glutes"
+      ],
+      "secondary": [],
+      "focus": "以大腿前侧与臀部为主要浏览目标。",
+      "summary": "双手各持一只哑铃放在身体两侧，练习负重下蹲。",
+      "setup": "双脚约与肩同宽，哑铃自然垂在身体两侧，收紧腹部。",
+      "steps": [
+        "保持脊柱稳定，像坐向椅子一样缓慢下蹲。",
+        "膝盖沿脚部方向移动，保持重量可控。",
+        "缓慢站回起点；难以稳定完成时可先改徒手。"
+      ],
+      "mistakes": [
+        "用腰背的弯曲代替髋膝弯曲。",
+        "失去平衡时仍继续增加负重或下蹲幅度。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Squat with dumbbell",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/squat/vid-20084682",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "凯圣王",
+        "title": "哑铃深蹲详解",
+        "part_title": "哑铃深蹲详解",
+        "page": 1,
+        "duration": 350,
+        "url": "https://www.bilibili.com/video/BV1X2421P7TL/?p=1",
+        "bvid": "BV1X2421P7TL",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "视频讲解哑铃深蹲；本页中文要点为双手在身体两侧垂放的版本。"
+      }
+    },
+    {
+      "id": "seated-leg-curl",
+      "name": "坐姿腿弯举",
+      "english": "Seated hamstring curl with weight machine",
+      "category": "腿部",
+      "equipment": "machine",
+      "requires": "坐姿腿弯举器械",
+      "primary": [
+        "hamstrings"
+      ],
+      "secondary": [],
+      "focus": "主要训练大腿后侧的腘绳肌。",
+      "summary": "通过屈膝下压器械滚垫，练习大腿后侧发力。",
+      "setup": "坐稳，将脚踝放在滚垫上方，按器械说明调整座椅与固定垫。",
+      "steps": [
+        "控制屈膝，把滚垫向下带动。",
+        "缓慢抬回小腿，让膝盖接近伸直但不锁死。",
+        "保持节奏平顺，再开始下一次。"
+      ],
+      "mistakes": [
+        "借惯性快速甩动小腿。",
+        "回程失去控制，让配重猛然落下。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Seated hamstring curl with weight machine",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/seated-hamstring-curl/vid-20084685",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "阿豪教健身",
+        "title": "新手健身教学【坐姿腿弯举】动作讲解",
+        "part_title": "新手健身教学【坐姿腿弯举】动作讲解",
+        "page": 1,
+        "duration": 112,
+        "url": "https://www.bilibili.com/video/BV17Z4y1X769/?p=1",
+        "bvid": "BV17Z4y1X769",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "独立作者的中文动作讲解，可能包含进阶或其他变式。"
+      }
+    },
+    {
+      "id": "dumbbell-calf-raise",
+      "name": "哑铃站姿提踵",
+      "english": "Calf raise with dumbbell",
+      "category": "腿部",
+      "equipment": "dumbbell",
+      "requires": "哑铃；需要时使用稳定扶手",
+      "primary": [
+        "calves"
+      ],
+      "secondary": [],
+      "focus": "主要训练小腿后侧，不代表覆盖小腿前侧所有肌肉。",
+      "summary": "保持站立，用前脚掌支撑抬起脚跟，再缓慢落下。",
+      "setup": "双脚约与肩同宽，哑铃垂在身体两侧，背部保持自然直立。",
+      "steps": [
+        "缓慢抬起脚跟，升到前脚掌支撑的位置。",
+        "膝部保持伸展，控制身体平衡。",
+        "慢慢落回地面；平衡困难时使用稳定支撑。"
+      ],
+      "mistakes": [
+        "靠弹跳反复抬落脚跟。",
+        "身体摇晃时仍勉强持重。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Calf raise with dumbbell",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/calf-raise/vid-20084681",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "青沨跑酷",
+        "title": "【国职教练】健身教练职业能力考试-初级-实操动作A组（抗阻训练）",
+        "part_title": "8-哑铃提踵",
+        "page": 8,
+        "duration": 18,
+        "url": "https://www.bilibili.com/video/BV1a14y1x7x7/?p=8",
+        "bvid": "BV1a14y1x7x7",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "P8 · 哑铃提踵动作示范，18秒；原站合集有其他动作。"
+      }
+    }
+  ]
+}
