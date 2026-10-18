@@ -1,14 +1,15 @@
 import { useState, type ReactNode } from 'react';
 import './shell.css';
 
-export type Section = 'muscles' | 'favorites' | 'new';
+export type Section = 'muscles' | 'training' | 'favorites' | 'new';
 
 function NavIcon({ section }: { section: Section }) {
-  return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{section === 'muscles' ? <><circle cx="12" cy="4" r="2" /><path d="m7 8 5 1 5-1M12 9v6m-5 6 5-6 5 6M7 8l-3 5m13-5 3 5" /></> : section === 'favorites' ? <path d="M6 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17l-6-4-6 4z" /> : <><rect x="3" y="4" width="18" height="16" rx="3" /><path d="m10 9 5 3-5 3z" /></>}</svg>;
+  return <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{section === 'muscles' ? <><circle cx="12" cy="4" r="2" /><path d="m7 8 5 1 5-1M12 9v6m-5 6 5-6 5 6M7 8l-3 5m13-5 3 5" /></> : section === 'training' ? <><path d="M8 12h8M5 7v10m3-12v14m11-12v10M16 5v14M3 10v4m18-4v4" /></> : section === 'favorites' ? <path d="M6 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17l-6-4-6 4z" /> : <><rect x="3" y="4" width="18" height="16" rx="3" /><path d="m10 9 5 3-5 3z" /></>}</svg>;
 }
 
 const SECTIONS: { id: Section; label: string; hint: string }[] = [
   { id: 'muscles', label: '练哪里', hint: '选肌群，或从器材开始' },
+  { id: 'training', label: '训练', hint: '记录每一组，回看进步' },
   { id: 'favorites', label: '动作收藏', hint: '收好想练的动作' },
   { id: 'new', label: '视频对照', hint: '新建对照，找回历史' },
 ];

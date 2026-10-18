@@ -13,6 +13,10 @@ def now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+class TrainingConflict(Exception):
+    pass
+
+
 class Store:
     def __init__(self, path: Path):
         self.path = path
@@ -40,6 +44,12 @@ class Store:
                 CREATE TABLE IF NOT EXISTS exercise_favorites (
                     exercise_id TEXT PRIMARY KEY, created_at TEXT NOT NULL
                 );
+                CREATE TABLE IF NOT EXISTS training_sessions (
+                    id TEXT PRIMARY KEY, created_at TEXT NOT NULL,
+                    status TEXT NOT NULL, document TEXT NOT NULL
+                );
+                CREATE UNIQUE INDEX IF NOT EXISTS one_active_training
+                    ON training_sessions(status) WHERE status='active';
             ''')
 
     @contextmanager
@@ -64,6 +74,61 @@ class Store:
         with self.connection() as db:
             rows = db.execute('SELECT exercise_id,created_at FROM exercise_favorites ORDER BY created_at DESC,exercise_id').fetchall()
         return [{'exercise_id': ident, 'created_at': created} for ident, created in rows]
+
+    def training_get(self, ident: str) -> dict | None:
+        with self.connection() as db:
+            row = db.execute('SELECT document FROM training_sessions WHERE id=?', (ident,)).fetchone()
+        return json.loads(row[0]) if row else None
+
+    @staticmethod
+    def training_summary(document: dict) -> dict:
+        return {**{key: document[key] for key in ('id','created_at','updated_at','ended_at','status','version')},
+                'exercise_count': len(document['exercises']),
+                'completed_sets': sum(bool(s['completed']) for x in document['exercises'] for s in x['sets'])}
+
+    def training_overview(self) -> dict:
+        with self.connection() as db:
+            db.execute('BEGIN')
+            active = db.execute("SELECT document FROM training_sessions WHERE status='active'").fetchone()
+            history = [self.training_summary(json.loads(row[0])) for row in db.execute(
+                "SELECT document FROM training_sessions WHERE status!='active' ORDER BY created_at DESC,id DESC LIMIT 100")]
+            last = {}
+            for row in db.execute("SELECT document FROM training_sessions WHERE status='completed' ORDER BY created_at DESC,id DESC LIMIT 1000"):
+                document = json.loads(row[0])
+                for exercise in document['exercises']:
+                    sets = [s for s in exercise['sets'] if s['completed']]
+                    if sets and exercise['exercise_id'] not in last:
+                        last[exercise['exercise_id']] = {'session_id': document['id'], 'ended_at': document['ended_at'],
+                                                        'name': exercise['name'], 'sets': sets}
+        return {'active': json.loads(active[0]) if active else None, 'history': history, 'last_exercises': last}
+
+    def training_create(self, document: dict) -> dict:
+        with self.connection() as db:
+            db.execute('BEGIN IMMEDIATE')
+            existing = db.execute('SELECT document FROM training_sessions WHERE id=?', (document['id'],)).fetchone()
+            if existing:
+                return json.loads(existing[0])
+            if db.execute("SELECT 1 FROM training_sessions WHERE status='active'").fetchone():
+                raise TrainingConflict('已有进行中的训练，请先继续或结束，再新建。')
+            db.execute('INSERT INTO training_sessions VALUES (?,?,?,?)',
+                       (document['id'], document['created_at'], document['status'], json.dumps(document, ensure_ascii=False)))
+        return document
+
+    def training_update(self, ident: str, version: int, status: str, exercises: list[dict]) -> dict | None:
+        with self.connection() as db:
+            db.execute('BEGIN IMMEDIATE')
+            row = db.execute('SELECT document FROM training_sessions WHERE id=?', (ident,)).fetchone()
+            if not row:
+                return None
+            current = json.loads(row[0])
+            if current['version'] != version or current['status'] != 'active':
+                raise TrainingConflict('记录已在其他页面更新或已结束；请重新读取服务器记录后再操作。')
+            stamp = now()
+            current.update(exercises=exercises, status=status, version=version+1, updated_at=stamp,
+                           ended_at=stamp if status != 'active' else None)
+            db.execute('UPDATE training_sessions SET status=?,document=? WHERE id=?',
+                       (status, json.dumps(current, ensure_ascii=False), ident))
+        return current
 
     def set_exercise_favorite(self, ident: str, saved: bool):
         with self.connection() as db:

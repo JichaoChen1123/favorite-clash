@@ -19,6 +19,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from . import model, video
 from .store import Store, now
+from .training import install_training_routes
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = Path(os.environ.get('CLASH_DATA_DIR', str(ROOT / 'data'))).resolve()
@@ -156,6 +157,7 @@ async def lifespan(application: FastAPI):
 app = FastAPI(title='收藏夹打架了', docs_url=None, redoc_url=None, lifespan=lifespan)
 allowed_hosts = ['127.0.0.1', 'localhost', '[::1]', 'testserver'] + [h.strip() for h in os.environ.get('CLASH_ALLOWED_HOSTS', '').split(',') if h.strip()]
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
+install_training_routes(app, EXERCISE_CATALOG)
 
 
 @app.middleware('http')

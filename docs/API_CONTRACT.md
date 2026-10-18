@@ -51,3 +51,16 @@ Exercise包含稳定id、中文/英文名、category、equipment（bodyweight/du
 练哪里内用“按肌群选 / 按器材选”切换，主菜单数量保持3个。`?view=equipment`为器材列表，`&equipment=dumbbells|lat-pulldown|chest-press|seated-row|seated-leg-curl|hip-adduction`恢复相应详情；非法ID显示列表。刷新及popstate恢复当前器材，已有job参数仍优先打开对照。切换其他模块清除器材路由参数。
 
 器材目录与自绘SVG结构示意在前端维护；提供名称/别名搜索、识别要点、使用前调整、当前收录动作的主练肌群与原始资料链接。器材用稳定exerciseIds关联既有动作，不把全部固定器械当作同一设备；哑铃可在关联动作内按肌群筛选。动作教学及收藏复用原接口和组件，不增加模型调用、数据库表或训练处方。拍照识别留待后续。
+
+## 训练记录与组间计时
+
+主菜单现为练哪里、训练、动作收藏、视频对照；手机4列底栏、PC侧栏。`?view=training`打开训练，job参数仍优先。手动训练记录与自动生成训练计划区分，后者未实现。
+
+- GET `/api/training` → `{active:TrainingSession|null,history:TrainingSummary[],last_exercises:{[exercise_id]:{session_id,ended_at,name,sets}}}`。历史最近100次；上次记录从最近1000次已完成训练中按动作选取，只有真实勾选完成的组，取消的训练不作为上次成绩。
+- POST `/api/training` `{id:UUID,exercise_ids:string[]}` → TrainingSession（201），1–30个已收录且不重复动作；相同id重试返回已创建记录。一个进行中训练，由事务及唯一索引保证，已有其他训练时409。每个动作初始3组空值，不预填为今日成绩。
+- GET `/api/training/{UUID}` → TrainingSession；不存在404。
+- PUT `/api/training/{UUID}` `{version:int,status:'active'|'completed'|'cancelled',exercises:[{exercise_id,sets:[{id,weight_kg:number|null,reps:int|null,completed:bool}]}]}` → 新版本TrainingSession。版本冲突或已结束时409；动作/组唯一、每动作1–20组、重量有限数0–2000kg、次数整数1–1000；完成组必须有重量和次数。结束训练至少有1组完成；取消保留记录。所有写入沿用同源/Host检查，与额度暂停独立。
+
+TrainingSession含id、created_at/updated_at/ended_at、status、version、exercises（动作名称与器材快照，sets）；summary含动作数与完成组数。SQLite独立training_sessions表；备份校验包括该表，旧任务/收藏/额度状态保留。重量按统一记录口径：哑铃单只、器械标注、徒手0kg，不作为负荷建议。
+
+填写后手动保存，勾选完成自动保存成功才启动休息；错误保留本地输入，冲突可确认后重新读取。训练模块跨菜单保留未保存草稿，刷新/关闭有未保存提示；已保存记录从服务恢复。历史首版只读。休息默认90秒，可调15–600秒、暂停/继续/清零，依据真实截止时间计算；计时及秒数偏好只保存在当前浏览器，跨页/刷新后恢复，不承诺后台或锁屏提醒。结束/取消训练清空本浏览器计时，不发起模型推理。

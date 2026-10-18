@@ -23,6 +23,10 @@ def fingerprint(connection: sqlite3.Connection) -> dict:
         rows = connection.execute('SELECT * FROM exercise_favorites ORDER BY exercise_id').fetchall()
         encoded = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
         result['exercise_favorites'] = {'rows': len(rows), 'sha256': hashlib.sha256(encoded).hexdigest()}
+    if connection.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='training_sessions'").fetchone():
+        rows = connection.execute('SELECT * FROM training_sessions ORDER BY id').fetchall()
+        encoded = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+        result['training_sessions'] = {'rows': len(rows), 'sha256': hashlib.sha256(encoded).hexdigest()}
     return result
 
 
@@ -48,7 +52,7 @@ def backup_history(source: Path, destination_root: Path) -> dict:
             raise RuntimeError('备份校验未通过，未将该副本标记为可用。')
         report = {'status': 'verified', 'created_at': datetime.now(timezone.utc).isoformat(),
                   'database': str(destination), 'integrity': integrity, 'tables': after,
-                  'includes': '历史、字幕、结果、反馈、模型运行记录、额度暂停状态及动作收藏（若已创建）',
+                  'includes': '历史、字幕、结果、反馈、模型运行记录、额度暂停状态、动作收藏及训练记录（若已创建）',
                   'excludes': '音视频缓存、转写模型、程序环境及账号凭据'}
     except Exception:
         (directory / 'backup-report.json').write_text(json.dumps({'status': 'failed'}, indent=2), encoding='utf-8')
