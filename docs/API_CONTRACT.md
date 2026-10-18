@@ -31,6 +31,8 @@ Video module owned separately: `app/video.py` exports `VideoError(code, message)
 
 模型通过同源静态资源`/models/ecorche/ecorche.meshopt.glb`提供，原始肌肉结构映射到13个中文肌群；许可与完整署名同目录保留。手机底栏及PC可收侧栏连接上述功能。
 
+肌群流程拆成两个独立页面：无muscle参数时只选肌群，点击后先确认；确认后相同路由的有效`muscle`参数显示独立动作选择页，仅保留标题、器材筛选、动作教学/收藏和“返回肌群选择”，不渲染人体模型或已选肌群信息卡。返回按钮清除muscle参数，刷新/浏览器前后退仍按地址恢复。动作页避免重复列表标题；模型来源与许可在选择页继续保留。
+
 ## 动作库、收藏与视频对照导航
 
 主菜单为练哪里、动作收藏、视频对照；视频对照内提供新建对照和对照历史。`?view=favorites`打开动作收藏；原`?view=history`及`?job=ID`保留，均归属于视频对照菜单。

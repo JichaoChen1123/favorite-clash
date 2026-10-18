@@ -27,7 +27,7 @@ function ExerciseDetail({ item, onClose }: { item: Exercise; onClose: () => void
 }
 function ExerciseCard({ item, onOpen }: { item: Exercise; onOpen: () => void }) { return <article className="exercise-card"><div className="exercise-card-top"><span className="exercise-category">{item.category} / {EQUIPMENT[item.equipment]}</span><SaveButton item={item} compact /></div><button type="button" className="exercise-open" onClick={onOpen} aria-label={`查看${item.name}教学`}><h3>{item.name}<span aria-hidden="true">↗</span></h3><p>{item.summary}</p><div className="exercise-card-muscles">{item.primary.map(id => <span key={id}>{getMuscle(id)?.name}</span>)}</div><span className="exercise-teaching-label">▷ 查看步骤与教学视频</span></button></article>; }
 
-export function ExerciseBrowser({ muscle, favoritesOnly = false, exerciseIds }: { muscle?: MuscleId; favoritesOnly?: boolean; exerciseIds?: readonly string[] }) {
+export function ExerciseBrowser({ muscle, favoritesOnly = false, exerciseIds, hideHeading = false }: { muscle?: MuscleId; favoritesOnly?: boolean; exerciseIds?: readonly string[]; hideHeading?: boolean }) {
   const library = useExercises();
   const [equipment, setEquipment] = useState<Equipment | 'all'>('all');
   const [filterMuscle, setFilterMuscle] = useState('all');
@@ -41,7 +41,8 @@ export function ExerciseBrowser({ muscle, favoritesOnly = false, exerciseIds }: 
   const items = savedItems.filter(item => (equipment === 'all' || item.equipment === equipment) && (filterMuscle === 'all' || item.primary.includes(filterMuscle as MuscleId)));
   const supported = MUSCLES.filter(group => available.some(item => item.primary.includes(group.id)));
   return <div className="exercise-browser">
-    <div className="exercise-section-heading"><div><span className="eyebrow">{muscle ? '从目标，找到动作' : favoritesOnly ? '把想练的，留在手边' : exerciseIds ? '从器材，开始练习' : '按肌群，找到练法'}</span><h2>{muscle ? `${getMuscle(muscle)?.name}，可以这样练` : favoritesOnly ? '我的收藏' : exerciseIds ? '这类器材，可以这样练' : '浏览动作'}</h2><p>{muscle ? '先选手边的器材，再打开动作看教学。' : favoritesOnly ? '这里收好了你想再看的动作。' : exerciseIds ? '打开动作查看教学步骤，也可以收藏，下次继续看。' : `${library.catalog.items.length} 个代表动作，覆盖 ${supported.length} 个目标肌群。`}</p></div><span className="exercise-count">{items.length} 个动作</span></div>
+    {!hideHeading && <div className="exercise-section-heading"><div><span className="eyebrow">{muscle ? '从目标，找到动作' : favoritesOnly ? '把想练的，留在手边' : exerciseIds ? '从器材，开始练习' : '按肌群，找到练法'}</span><h2>{muscle ? `${getMuscle(muscle)?.name}，可以这样练` : favoritesOnly ? '我的收藏' : exerciseIds ? '这类器材，可以这样练' : '浏览动作'}</h2><p>{muscle ? '先选手边的器材，再打开动作看教学。' : favoritesOnly ? '这里收好了你想再看的动作。' : exerciseIds ? '打开动作查看教学步骤，也可以收藏，下次继续看。' : `${library.catalog.items.length} 个代表动作，覆盖 ${supported.length} 个目标肌群。`}</p></div><span className="exercise-count">{items.length} 个动作</span></div>}
+    {hideHeading && <p className="muscle-action-count" role="status">{items.length} 个动作</p>}
     <LibraryMessages />
     {!muscle && (!exerciseIds || supported.length > 1) && <label className="exercise-muscle-filter">按目标肌群<select value={filterMuscle} onChange={event => setFilterMuscle(event.target.value)}><option value="all">全部肌群</option>{supported.map(group => <option key={group.id} value={group.id}>{group.name}</option>)}</select></label>}
     {!exerciseIds && <div className="exercise-equipment-tabs" aria-label="按器材筛选">{(['all', 'bodyweight', 'dumbbell', 'machine'] as const).map(key => <button type="button" key={key} className={equipment === key ? 'active' : ''} aria-pressed={equipment === key} onClick={() => setEquipment(key)}>{key === 'all' ? '全部器材' : EQUIPMENT[key]}</button>)}</div>}
