@@ -1,4 +1,4 @@
-# 收藏夹打架了 — 首版接口约定
+# 练有引力 — 接口约定
 
 Same-origin `/api`; UTF-8 JSON. Error: `{detail: string}`. Frontend lives in `frontend/`, backend package `app/`. No hardcoded demo results in normal UI.
 

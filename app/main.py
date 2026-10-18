@@ -154,7 +154,7 @@ async def lifespan(application: FastAPI):
     await application.state.manager.close()
 
 
-app = FastAPI(title='收藏夹打架了', docs_url=None, redoc_url=None, lifespan=lifespan)
+app = FastAPI(title='练有引力', docs_url=None, redoc_url=None, lifespan=lifespan)
 allowed_hosts = ['127.0.0.1', 'localhost', '[::1]', 'testserver'] + [h.strip() for h in os.environ.get('CLASH_ALLOWED_HOSTS', '').split(',') if h.strip()]
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
 install_training_routes(app, EXERCISE_CATALOG)
