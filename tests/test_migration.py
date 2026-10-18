@@ -22,6 +22,7 @@ def setup_migration(monkeypatch):
     (source / '.runtime').mkdir()
     (source / 'requirements.lock.txt').write_text('')
     for name in migration.ENTRY_NAMES:
+        (source / name).parent.mkdir(parents=True, exist_ok=True)
         (source / name).write_bytes(b'original launcher\r\n')
     store = Store(source / 'data/favorite-clash.sqlite3')
     store.create({'id':'saved-job', 'created_at':'2026-10-18', 'status':'completed'})
