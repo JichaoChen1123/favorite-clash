@@ -26,8 +26,11 @@ def test_catalog_has_real_sources_and_valid_muscle_mappings(exercise_client):
     client, _ = exercise_client
     catalog = client.get('/api/exercises').json()
     ids = [item['id'] for item in catalog['items']]
-    assert len(ids) == len(set(ids)) == 10
+    assert len(ids) == len(set(ids)) == 16
+    original_ids = {'kneeling-pushup','dumbbell-chest-press','machine-chest-press','dumbbell-bent-row','lat-pulldown','seated-cable-row','bodyweight-squat','dumbbell-squat','seated-leg-curl','dumbbell-calf-raise'}
+    assert original_ids <= set(ids)  # Saved IDs remain valid after catalog expansion.
     muscle_ids = {'chest','shoulders','biceps','triceps','forearms','abs','lats','upper-back','glutes','quads','hamstrings','inner-thigh','calves'}
+    assert {muscle for item in catalog['items'] for muscle in item['primary']} == muscle_ids
     for item in catalog['items']:
         assert re.fullmatch('[a-z0-9-]+', item['id'])
         assert item['primary'] and set(item['primary'] + item['secondary']) <= muscle_ids
@@ -35,16 +38,29 @@ def test_catalog_has_real_sources_and_valid_muscle_mappings(exercise_client):
         assert item['equipment'] in {'bodyweight','dumbbell','machine'}
         assert len(item['steps']) >= 3 and len(item['mistakes']) >= 2
         source = urlsplit(item['source']['url'])
-        assert source.scheme == 'https' and source.netloc == 'www.mayoclinic.org'
-        assert 'Video:' in item['source']['title'] and '/vid-' in source.path
+        assert source.scheme == 'https'
+        if item['source']['publisher'] == 'Mayo Clinic':
+            assert source.netloc == 'www.mayoclinic.org'
+            assert 'Video:' in item['source']['title'] and '/vid-' in source.path
+        elif item['source']['publisher'] == 'ACE':
+            assert source.netloc == 'www.acefitness.org'
+            assert source.path in {'/resources/everyone/exercise-library/26/lateral-raise/', '/resources/everyone/exercise-library/30/wrist-curl-flexion/'}
+        else:
+            assert item['source']['publisher'] == 'Life Fitness'
+            assert source.netloc == 'www.lifefitness.com.au' and source.path.endswith('.pdf')
+            assert source.fragment == 'page=9'
         teaching = item['teaching']
         video = urlsplit(teaching['url'])
         assert video.scheme == 'https' and video.netloc == 'www.bilibili.com'
         assert teaching['author'] and teaching['title'] and teaching['duration'] > 0
         assert video.query == f"p={teaching['page']}"
-    assert {item['category'] for item in catalog['items']} == {'胸部','背部','腿部'}
+    assert {item['category'] for item in catalog['items']} == {'胸部','背部','腿部','肩部','手臂','核心'}
     calf = next(item for item in catalog['items'] if item['id'] == 'dumbbell-calf-raise')
     assert calf['teaching']['page'] == 8 and '提踵' in calf['teaching']['part_title']
+    inner = next(item for item in catalog['items'] if item['id'] == 'machine-hip-adduction')
+    assert inner['teaching']['page'] == 55 and '内收' in inner['teaching']['part_title']
+    wrist = next(item for item in catalog['items'] if item['id'] == 'dumbbell-wrist-curl')
+    assert '膝' in wrist['teaching']['scope'] and '凳' in wrist['teaching']['scope']
 
 
 def test_favorites_idempotency_persistence_and_isolation(exercise_client):
@@ -57,6 +73,9 @@ def test_favorites_idempotency_persistence_and_isolation(exercise_client):
     store = Store(directory / 'favorite-clash.sqlite3')
     assert store.exercise_favorites() == saved  # Reopen the same database.
     assert store.list() == []
+    assert client.put('/api/exercise-favorites/dumbbell-wrist-curl').status_code == 200
+    assert client.delete('/api/exercise-favorites/dumbbell-wrist-curl').status_code == 200
+    assert store.exercise_favorites() == saved
     store.pause_model('test-only quota pause')
     assert client.put('/api/exercise-favorites/lat-pulldown').status_code == 200
     assert store.model_pause()['reason'] == 'test-only quota pause'

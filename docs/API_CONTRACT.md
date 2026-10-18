@@ -40,6 +40,6 @@ Video module owned separately: `app/video.py` exports `VideoError(code, message)
 - PUT `/api/exercise-favorites/{exercise_id}` → `{exercise_id,saved:true}`，幂等，已有收藏保留原时间；未知ID返回404。
 - DELETE `/api/exercise-favorites/{exercise_id}` → `{exercise_id,saved:false}`，幂等；未知ID返回404。收藏写入沿用同源及Host校验，与模型暂停状态独立。
 
-Exercise包含稳定id、中文/英文名、category、equipment（bodyweight/dumbbell/machine）、requires、primary/secondary肌群ID、focus、summary、setup、steps、mistakes、source（Mayo Clinic文字资料）及teaching（B站url/title/author/page/part_title/duration）。中文要点与独立视频作者分别署名，不表示逐句相同或已完成全片动作审查。提踵使用明确P8，不能落到合集P1。只按primary匹配所选目标，辅助参与不冒充主练目标；空肌群和空器材组合明确显示暂无收录。
+Exercise包含稳定id、中文/英文名、category、equipment（bodyweight/dumbbell/machine）、requires、primary/secondary肌群ID、focus、summary、setup、steps、mistakes、source（publisher/title/url/language）及teaching（B站url/title/author/page/part_title/duration/scope）。当前16个代表动作覆盖全部13个可选肌群，文字资料来自Mayo Clinic、ACE及Life Fitness；数量与可筛选肌群由目录计算。中文要点与独立视频作者分别署名，不表示逐句相同或已完成全片动作审查；变式差异在scope说明。提踵P8、侧平举P12、弯举P14、卷腹P43、内收P55均使用明确分P，不能落到合集P1。只按primary匹配所选目标，辅助参与不冒充主练目标；空器材组合明确显示暂无收录。
 
 收藏保存在SQLite独立`exercise_favorites`表，不写视频任务历史；数据库备份包含该表。客户端收到写入成功后才更新状态，失败显示错误与刷新入口；页面切回及进入动作浏览时重新读取收藏。训练计划未实现。

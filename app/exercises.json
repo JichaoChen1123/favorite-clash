@@ -1,7 +1,7 @@
 {
-  "version": "2026-10-18.catalog-v1",
+  "version": "2026-10-18.catalog-v2",
   "reviewed_at": "2026-10-18",
-  "note": "中文要点根据Mayo Clinic资料整理，非完整翻译；另提供B站中文演示，视频作者与文字资料独立，可能包含其他变式。肌群映射用于浏览。",
+  "note": "中文要点参考Mayo Clinic、ACE及Life Fitness原始资料整理，非完整翻译；另附B站独立作者中文演示。具体动作变式与来源见详情，肌群映射用于浏览。",
   "items": [
     {
       "id": "kneeling-pushup",
@@ -439,6 +439,264 @@
         "language": "中文",
         "verification": "元信息及分P已核对；未完成整片人工动作审查",
         "scope": "P8 · 哑铃提踵动作示范，18秒；原站合集有其他动作。"
+      }
+    },
+    {
+      "id": "dumbbell-lateral-raise",
+      "name": "哑铃侧平举",
+      "english": "Lateral raise",
+      "category": "肩部",
+      "equipment": "dumbbell",
+      "requires": "一对哑铃与可向两侧展开手臂的空间",
+      "primary": [
+        "shoulders"
+      ],
+      "secondary": [],
+      "focus": "以肩部三角肌中束为主要目标；不代表一个动作覆盖肩部所有结构。",
+      "summary": "把哑铃向两侧缓慢抬起，练习肩部发力与上举控制。",
+      "setup": "站稳，双手握住哑铃垂在大腿两侧，掌心朝向身体，肘部微屈，收紧核心。",
+      "steps": [
+        "呼气，将双臂向两侧缓慢抬起，上臂与肘部一起移动。",
+        "接近肩高时稍作外旋，保持手腕平直，抬至双臂约与地面平行。",
+        "吸气，控制哑铃缓慢下降，身体保持稳定，再回到起始位置。"
+      ],
+      "mistakes": [
+        "耸肩、后仰或甩动身体来带起哑铃。",
+        "翻折手腕，或用无法控制的重量快速下落。"
+      ],
+      "source": {
+        "publisher": "ACE",
+        "title": "Lateral Raise",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/26/lateral-raise/",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "青沨跑酷",
+        "title": "【国职教练】健身教练职业能力考试-初级-实操动作A组（抗阻训练）",
+        "part_title": "12-哑铃站姿侧平举",
+        "page": 12,
+        "duration": 16,
+        "url": "https://www.bilibili.com/video/BV1a14y1x7x7/?p=12",
+        "bvid": "BV1a14y1x7x7",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "P12 · 12-哑铃站姿侧平举，16秒动作示范；原站合集含其他动作，视频可能采用不同手臂位置或细节。"
+      }
+    },
+    {
+      "id": "dumbbell-biceps-curl",
+      "name": "哑铃弯举",
+      "english": "Biceps curl with dumbbell",
+      "category": "手臂",
+      "equipment": "dumbbell",
+      "requires": "一对哑铃或单只哑铃",
+      "primary": [
+        "biceps"
+      ],
+      "secondary": [],
+      "focus": "以上臂前侧肱二头肌为主要目标，前臂保持稳定握持。",
+      "summary": "固定上臂，用屈肘把哑铃举起，再控制放下。",
+      "setup": "站稳或坐稳，手握哑铃，掌心向前、向上，上臂贴近身体两侧，手腕保持平直。",
+      "steps": [
+        "保持肘部靠近身体，缓慢屈肘，将哑铃向上举起。",
+        "上臂保持稳定，不向前甩动肘部或用身体借力。",
+        "控制哑铃缓慢下降，回到起始位置；可双臂同步或交替进行。"
+      ],
+      "mistakes": [
+        "摆动身体或把肘部向前送，代替屈肘发力。",
+        "手腕弯折，或让哑铃快速落下。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Biceps curl with dumbbell",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/biceps-curl/vid-20084675",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "青沨跑酷",
+        "title": "【国职教练】健身教练职业能力考试-初级-实操动作A组（抗阻训练）",
+        "part_title": "14-哑铃站姿弯举",
+        "page": 14,
+        "duration": 19,
+        "url": "https://www.bilibili.com/video/BV1a14y1x7x7/?p=14",
+        "bvid": "BV1a14y1x7x7",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "P14 · 14-哑铃站姿弯举，19秒动作示范；原站合集含其他动作，视频可能采用不同手臂位置或细节。"
+      }
+    },
+    {
+      "id": "dumbbell-lying-triceps-extension",
+      "name": "哑铃仰卧臂屈伸",
+      "english": "Lying triceps extension with dumbbell",
+      "category": "手臂",
+      "equipment": "dumbbell",
+      "requires": "哑铃与平凳或防滑地垫",
+      "primary": [
+        "triceps"
+      ],
+      "secondary": [],
+      "focus": "以上臂后侧肱三头肌为主要目标。此处为仰卧版本，不是坐姿颈后臂屈伸。",
+      "summary": "仰卧固定上臂，通过伸直和弯曲肘部训练上臂后侧。",
+      "setup": "仰卧在平凳或地垫上，手握哑铃，上臂指向天花板，肘部弯曲约90度，身体保持稳定。",
+      "steps": [
+        "保持上臂位置，缓慢伸直肘部，将哑铃向上移动。",
+        "平稳控制重量，不突然甩动手臂；单臂时可用另一只手帮助稳定上臂。",
+        "缓慢弯曲肘部回到起始位置，头部、躯干与下肢保持安稳。"
+      ],
+      "mistakes": [
+        "用肩部前后摆动替代肘部屈伸。",
+        "猛推哑铃或快速下落，失去对重量的控制。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Triceps extension with dumbbell",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/triceps-extension/vid-20084676",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "凯圣王",
+        "title": "对握哑铃仰卧臂屈伸详解",
+        "part_title": "对握哑铃仰卧臂屈伸详解",
+        "page": 1,
+        "duration": 460,
+        "url": "https://www.bilibili.com/video/BV1Cz421i79n/?p=1",
+        "bvid": "BV1Cz421i79n",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "视频讲解双手对握哑铃的仰卧版本；文字资料以单臂示范为基础，均通过固定上臂进行屈肘和伸肘。"
+      }
+    },
+    {
+      "id": "dumbbell-wrist-curl",
+      "name": "哑铃腕弯举",
+      "english": "Wrist curl — flexion",
+      "category": "手臂",
+      "equipment": "dumbbell",
+      "requires": "轻哑铃与可稳定支撑前臂的训练凳",
+      "primary": [
+        "forearms"
+      ],
+      "secondary": [],
+      "focus": "以前臂腕屈肌群为主要目标；不等同于前臂全部肌肉或握力的完整训练。",
+      "summary": "支撑住前臂，仅让手腕在可控范围内屈伸。",
+      "setup": "握紧哑铃，前臂支撑在凳面，掌心朝上，肘部约90度，手腕伸出支撑边缘并先保持平直。",
+      "steps": [
+        "保持前臂与躯干稳定，吸气，让手腕缓慢向下伸展。",
+        "不松开握持，短暂停顿后呼气，屈腕将哑铃卷回起始位置。",
+        "继续控制下降与上卷，全程握牢哑铃，避免让它滚到指尖。"
+      ],
+      "mistakes": [
+        "抬起前臂或晃动身体，把腕弯举变成整个手臂的弯举。",
+        "松开握持让哑铃滚向指尖，或用大重量猛甩手腕。"
+      ],
+      "source": {
+        "publisher": "ACE",
+        "title": "Wrist Curl - Flexion",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/30/wrist-curl-flexion/",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "掰手腕的废柴大叔",
+        "title": "腕力系统训练041-前臂置于膝盖的哑铃腕弯举",
+        "part_title": "041-前臂置于膝盖的哑铃腕弯举",
+        "page": 1,
+        "duration": 179,
+        "url": "https://www.bilibili.com/video/BV1cb411P7KY/?p=1",
+        "bvid": "BV1cb411P7KY",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "视频采用前臂支撑在膝上的腕弯举；本页文字资料采用凳面支撑。先看清支撑位置，视频中的腕力专项安排不作为本页训练处方。"
+      }
+    },
+    {
+      "id": "abdominal-crunch",
+      "name": "仰卧卷腹",
+      "english": "Abdominal crunch",
+      "category": "核心",
+      "equipment": "bodyweight",
+      "requires": "瑜伽垫或防滑地面",
+      "primary": [
+        "abs"
+      ],
+      "secondary": [],
+      "focus": "以腹部肌肉为主要目标，尤其是腹直肌；不是坐起整个躯干的仰卧起坐。",
+      "summary": "收紧腹部抬起头肩，再慢慢回落，练习小幅度卷腹。",
+      "setup": "仰卧屈膝，双脚踩稳地面并约与髋同宽，膝盖自然分开，双臂交叉放在胸前。",
+      "steps": [
+        "收紧腹部，缓慢抬起头部和肩部，让肩部离开地面。",
+        "保持动作与呼吸可控，不用双手拉扯头部，也不把整个身体坐起来。",
+        "控制头肩回到起始位置，保持节奏，再进行下一次。"
+      ],
+      "mistakes": [
+        "用手拉头、猛甩脖子，或憋气完成动作。",
+        "追求坐得很高，把小幅卷腹做成借力仰卧起坐。"
+      ],
+      "source": {
+        "publisher": "Mayo Clinic",
+        "title": "Video: Abdominal crunch",
+        "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/abdominal-crunch/vid-20084664",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "青沨跑酷",
+        "title": "【国职教练】健身教练职业能力考试-初级-实操动作A组（抗阻训练）",
+        "part_title": "43.仰卧卷腹",
+        "page": 43,
+        "duration": 25,
+        "url": "https://www.bilibili.com/video/BV1a14y1x7x7/?p=43",
+        "bvid": "BV1a14y1x7x7",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "P43 · 43.仰卧卷腹，25秒动作示范；原站合集含其他动作，视频可能采用不同手臂位置或细节。"
+      }
+    },
+    {
+      "id": "machine-hip-adduction",
+      "name": "坐姿器械腿内收",
+      "english": "Seated hip adduction",
+      "category": "腿部",
+      "equipment": "machine",
+      "requires": "腿内收器械，或可切换内收模式的内收/外展组合器械",
+      "primary": [
+        "inner-thigh"
+      ],
+      "secondary": [],
+      "focus": "以大腿内侧髋内收肌群为主要目标；向内合腿，与向外打开的髋外展不同。",
+      "summary": "双腿从舒适的打开位置向内合拢，再控制回到起点。",
+      "setup": "按器械说明设为内收模式，让软垫接触膝部内侧，坐稳并将双脚放在踏板，调至舒适的打开幅度。",
+      "steps": [
+        "握住扶手，保持坐姿稳定，用双腿缓慢推动软垫向内合拢。",
+        "在可控的内收终点短暂停顿，不靠惯性撞击垫块。",
+        "控制双腿缓慢向外回到起始位置；结束后按器械说明释放调节装置再离开。"
+      ],
+      "mistakes": [
+        "把向外推的外展模式当成内收，或软垫接触位置不对。",
+        "强行打开到不舒适的位置，或让配重快速砸回。"
+      ],
+      "source": {
+        "publisher": "Life Fitness",
+        "title": "Optima Series User Manual · Hip Adductor (p. 8)",
+        "url": "https://www.lifefitness.com.au/wp-content/uploads/2015/02/Optima_user_manual_for_all_strength_2_585_1371787541.pdf#page=9",
+        "language": "英文"
+      },
+      "teaching": {
+        "publisher": "哔哩哔哩",
+        "author": "青沨跑酷",
+        "title": "【国职教练】健身教练职业能力考试-初级-实操动作A组（抗阻训练）",
+        "part_title": "55.器械腿内收1",
+        "page": 55,
+        "duration": 36,
+        "url": "https://www.bilibili.com/video/BV1a14y1x7x7/?p=55",
+        "bvid": "BV1a14y1x7x7",
+        "language": "中文",
+        "verification": "元信息及分P已核对；未完成整片人工动作审查",
+        "scope": "P55 · 器械腿内收示范，36秒。文字参考Life Fitness Optima组合器械；实际调节方式以现场器械标识为准。"
       }
     }
   ]
