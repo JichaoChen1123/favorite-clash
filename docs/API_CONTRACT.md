@@ -1,5 +1,9 @@
 # 练有引力 — 接口约定
 
+## 应用内帮助
+
+PC侧栏下方和手机右上角提供“帮助与使用说明”，不增加四个主菜单。帮助为原生模态窗口，提供本地文字搜索、分类与折叠说明，涵盖快速上手、动作收藏、视频对照、训练记录、连接部署及数据隐私；完整部署说明和问题反馈跳转公开GitHub。帮助搜索不请求模型，不读写用户记录。打开/关闭不改变当前URL，不卸载当前业务页面，保留视频输入、训练草稿与计时；关闭或Esc恢复原焦点，窗口内部滚动。帮助说明中的恢复额度/重读记录均由用户自行确认执行，不提供自动恢复或重试动作。
+
 Same-origin `/api`; UTF-8 JSON. Error: `{detail: string}`. Frontend lives in `frontend/`, backend package `app/`. No hardcoded demo results in normal UI.
 
 - GET `/api/health`: `{status, provider, model, provider_ready, ffmpeg_ready}`.

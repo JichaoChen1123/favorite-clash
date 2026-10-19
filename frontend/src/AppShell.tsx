@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from 'react';
 import './shell.css';
+import HelpDialog from './HelpDialog';
 
 export type Section = 'muscles' | 'training' | 'favorites' | 'new';
 
@@ -16,12 +17,14 @@ const SECTIONS: { id: Section; label: string; hint: string }[] = [
 
 export function AppShell({ active, onNavigate, children }: { active: Section; onNavigate: (section: Section) => void; children: ReactNode }) {
   const [collapsed, setCollapsed] = useState(() => { try { return localStorage.getItem('fitness-sidebar-collapsed') === 'true'; } catch { return false; } });
+  const [helpOpen, setHelpOpen] = useState(false);
+  const helpButton = <button type="button" className="workspace-help" aria-label="帮助与使用说明" title="帮助与使用说明" aria-haspopup="dialog" aria-expanded={helpOpen} onClick={() => setHelpOpen(true)}><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M9.5 9a2.5 2.5 0 0 1 5 .4c0 1.7-2.5 1.9-2.5 3.6M12 16h.01" /></svg><span>帮助与说明</span></button>;
   function toggle() { setCollapsed(value => { try { localStorage.setItem('fitness-sidebar-collapsed', String(!value)); } catch { /* Layout remains usable without storage. */ } return !value; }); }
   const entries = (mobile: boolean) => SECTIONS.map(section => <button key={section.id} type="button" className={active === section.id ? 'active' : ''} aria-label={section.label} aria-current={active === section.id ? 'page' : undefined} title={collapsed && !mobile ? section.label : undefined} onClick={() => onNavigate(section.id)}><NavIcon section={section.id} /><span className="nav-copy"><b>{section.label}</b>{!mobile && <small>{section.hint}</small>}</span></button>);
   return <div className={`workspace-shell ${collapsed ? 'sidebar-collapsed' : ''}`}>
-    <aside className="workspace-sidebar"><button type="button" className="workspace-brand" onClick={() => onNavigate('muscles')} aria-label="练有引力，返回练哪里"><span className="brand-mark"><span /><span /></span><span className="workspace-brand-name">练有引力</span></button><p className="sidebar-caption">从看懂，到练懂</p><nav aria-label="主要导航">{entries(false)}</nav><div className="sidebar-bottom"><p>每次选择，都更清楚一点。</p><button type="button" className="sidebar-toggle" onClick={toggle} aria-expanded={!collapsed} aria-label={collapsed ? '展开侧栏' : '收起侧栏'} title={collapsed ? '展开侧栏' : '收起侧栏'}><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3" /><path d="M9 4v16m6-11-3 3 3 3" /></svg><span>收起侧栏</span></button></div></aside>
-    <header className="workspace-mobile-header"><button className="workspace-brand" type="button" onClick={() => onNavigate('muscles')} aria-label="练有引力，返回练哪里"><span className="brand-mark"><span /><span /></span><span>练有引力</span></button></header>
+    <aside className="workspace-sidebar"><button type="button" className="workspace-brand" onClick={() => onNavigate('muscles')} aria-label="练有引力，返回练哪里"><span className="brand-mark"><span /><span /></span><span className="workspace-brand-name">练有引力</span></button><p className="sidebar-caption">从看懂，到练懂</p><nav aria-label="主要导航">{entries(false)}</nav><div className="sidebar-bottom">{helpButton}<p>每次选择，都更清楚一点。</p><button type="button" className="sidebar-toggle" onClick={toggle} aria-expanded={!collapsed} aria-label={collapsed ? '展开侧栏' : '收起侧栏'} title={collapsed ? '展开侧栏' : '收起侧栏'}><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3" /><path d="M9 4v16m6-11-3 3 3 3" /></svg><span>收起侧栏</span></button></div></aside>
+    <header className="workspace-mobile-header"><button className="workspace-brand" type="button" onClick={() => onNavigate('muscles')} aria-label="练有引力，返回练哪里"><span className="brand-mark"><span /><span /></span><span>练有引力</span></button>{helpButton}</header>
     <div className="workspace-content">{children}</div>
-    <nav className="workspace-bottom-nav" aria-label="底部菜单">{entries(true)}</nav>
+    <nav className="workspace-bottom-nav" aria-label="底部菜单">{entries(true)}</nav>{helpOpen && <HelpDialog onClose={() => setHelpOpen(false)} />}
   </div>;
 }

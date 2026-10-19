@@ -26,10 +26,14 @@
 .sidebar-collapsed .sidebar-toggle{justify-content:center}
 .sidebar-collapsed .sidebar-toggle>svg{transform:rotate(180deg)}
 .workspace-mobile-header,.workspace-bottom-nav{display:none}
+.workspace-help{display:flex;align-items:center;justify-content:flex-start;gap:9px;width:100%;min-height:44px;padding:10px 11px;margin-bottom:13px;border:1px solid #d7e1cb;border-radius:8px;background:#fbfcf5;color:#5c744b;font:inherit;font-size:12px;white-space:nowrap;cursor:pointer}
+.workspace-help>svg{flex-shrink:0}.workspace-help:hover{background:#edf3e5}.workspace-help:focus-visible{outline:2px solid #708e53;outline-offset:3px}
+.sidebar-collapsed .workspace-help{justify-content:center;padding:10px}.sidebar-collapsed .workspace-help>span{display:none}
 @media(max-width:760px){
  .workspace-sidebar{display:none}
  .workspace-content{margin-left:0!important}
- .workspace-mobile-header{display:flex;align-items:center;height:66px;border-bottom:1px solid #e0e4d7;padding:0 21px;background:#f6f5ef}
+ .workspace-mobile-header{display:flex;align-items:center;justify-content:space-between;gap:12px;height:66px;border-bottom:1px solid #e0e4d7;padding:0 21px;background:#f6f5ef}
+ .workspace-mobile-header .workspace-help{width:auto;min-height:44px;margin:0;padding:9px 10px;font-size:12px;gap:6px}
  .workspace-mobile-header .workspace-brand{font-size:18px}
  .workspace-content>.main-container{min-height:calc(100svh - 180px);padding-bottom:34px}
  .workspace-content>.site-footer{margin-bottom:83px;padding-bottom:22px}
