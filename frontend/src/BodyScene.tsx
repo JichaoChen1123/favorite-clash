@@ -21,6 +21,20 @@ export default function BodyScene({ selected, onPick }: { selected: MuscleId | n
   const [reload, setReload] = useState(0);
   const [hovered, setHovered] = useState<MuscleId | null>(null);
   const [facing, setFacing] = useState('front');
+  const [slow, setSlow] = useState(false);
+
+  useEffect(() => {
+    setSlow(false);
+    if (ready || error) return;
+    const timer = setTimeout(() => setSlow(true), 8000);
+    return () => clearTimeout(timer);
+  }, [ready, error, reload]);
+
+  function chooseFromList() {
+    const picker = document.getElementById('muscle-picker');
+    picker?.scrollIntoView({ block: 'start', behavior: 'auto' });
+    picker?.focus({ preventScroll: true });
+  }
 
   useEffect(() => {
     const container = host.current!;
@@ -137,5 +151,5 @@ export default function BodyScene({ selected, onPick }: { selected: MuscleId | n
 
   useEffect(() => { engine.current?.highlight(selected); }, [selected]);
   const label = getMuscle(hovered || selected || null)?.name;
-  return <div className="body-scene-card"><div className="body-scene-toolbar"><span><i />{selected ? '目标肌群已高亮' : '轻点肌群，确认你的选择'}</span><div>{(['front', 'back', 'reset'] as const).map(side => <button type="button" key={side} disabled={!ready} aria-pressed={side !== 'reset' ? facing === side : undefined} onClick={() => engine.current?.view(side)}>{side === 'front' ? '正面' : side === 'back' ? '背面' : '复位'}</button>)}</div></div><div className="body-scene" ref={host} aria-busy={!ready && !error}>{!ready && !error && <div className="model-loading" role="status"><span className="spinner" /><b>正在打开人体模型</b><span>{progress ? `已读取 ${progress}%` : '首次打开约需加载6MB'}</span></div>}{error && <div className="model-loading model-error" role="alert"><b>暂时无法显示模型</b><p>{error}</p><button type="button" className="button secondary" onClick={() => setReload(value => value + 1)}>重新加载模型</button></div>}{ready && <div className="model-hover-label" aria-live="polite">{label || '旋转查看正面与背面'}</div>}</div><p className="body-scene-hint">单指拖动旋转 · 双指缩放 · 轻点肌群选择<span>也可从右侧或下方列表选择</span></p></div>;
+  return <div className="body-scene-card"><div className="body-scene-toolbar"><span><i />{selected ? '目标肌群已高亮' : '轻点肌群，确认你的选择'}</span><div>{(['front', 'back', 'reset'] as const).map(side => <button type="button" key={side} disabled={!ready} aria-pressed={side !== 'reset' ? facing === side : undefined} onClick={() => engine.current?.view(side)}>{side === 'front' ? '正面' : side === 'back' ? '背面' : '复位'}</button>)}</div></div><div className="body-scene" ref={host} aria-busy={!ready && !error}>{!ready && !error && <div className="model-loading" role="status"><span className="spinner" /><b>正在打开人体模型</b><span>{progress >= 99 ? '正在准备模型…' : progress ? `已读取 ${progress}%` : '首次打开约需加载6MB'}</span><progress className="model-progress" max={100} value={progress || undefined} aria-label="人体模型加载进度" /><p className="model-loading-note">{slow ? '加载比平时慢，可以先从肌群列表选择。' : '不必等待模型，也可以直接按名称选择肌群。'}</p><button type="button" className="button secondary" onClick={chooseFromList}>先从列表选择</button></div>}{error && <div className="model-loading model-error" role="alert"><b>暂时无法显示模型</b><p>{error}</p><button type="button" className="button secondary" onClick={() => setReload(value => value + 1)}>重新加载模型</button><button type="button" className="text-button" onClick={chooseFromList}>从列表选择肌群</button></div>}{ready && <div className="model-hover-label" aria-live="polite">{label || '旋转查看正面与背面'}</div>}</div><p className="body-scene-hint">单指拖动旋转 · 双指缩放 · 轻点肌群选择<span>也可从右侧或下方列表选择</span></p></div>;
 }

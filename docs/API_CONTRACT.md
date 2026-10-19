@@ -39,6 +39,8 @@ Video module owned separately: `app/video.py` exports `VideoError(code, message)
 
 当前主菜单为练哪里、视频对照、训练、动作收藏；视频对照内提供新建对照和对照历史。`?view=favorites`打开动作收藏；原`?view=history`及`?job=ID`保留，均归属于视频对照菜单。
 
+前端请求等待上限：普通读取20秒、一般写入30秒、视频元信息解析45秒、字幕上传90秒，包含响应正文读取。等待超时不代表后台任务取消或写入失败；写入未确认时提示先刷新核对，不自动重发。服务返回的业务错误与额度暂停提示原样保留。历史读取失败时显示连接失败状态，不冒充空历史；手动刷新成功后恢复。
+
 - GET `/api/exercises` → `{version,reviewed_at,note,items:Exercise[]}`，来自本地核对的静态动作目录，无模型推理。
 - GET `/api/exercise-favorites` → `{items:[{exercise_id,created_at}]}`，同一私人服务的PC和手机共用，按收藏时间倒序。
 - PUT `/api/exercise-favorites/{exercise_id}` → `{exercise_id,saved:true}`，幂等，已有收藏保留原时间；未知ID返回404。

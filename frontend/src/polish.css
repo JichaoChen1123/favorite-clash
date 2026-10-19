@@ -1,0 +1,60 @@
+/* Keep reading text legible across independently loaded feature styles. */
+.main-container .body-scene-toolbar { flex-wrap: wrap; }
+.main-container .body-scene-toolbar button { min-width: 44px; min-height: 44px; color: #596c49; }
+.main-container .model-loading { color: #526a40; }
+.main-container .model-loading > span { font-size: 13px; color: #657653; }
+.main-container .model-progress { width: min(220px, 100%); height: 7px; accent-color: #637f49; }
+.main-container .model-loading-note { font-size: 13px; line-height: 1.85; color: #657653; max-width: 290px; margin: 0; }
+.main-container .model-loading .button, .main-container .model-loading .text-button { min-height: 44px; font-size: 13px; }
+.main-container .muscle-picker { scroll-margin-top: 20px; }
+.main-container .muscle-picker:focus-visible { outline: 2px solid #718954; outline-offset: 3px; }
+.main-container .body-scene-hint, .main-container .body-scene-hint > span,
+.main-container .muscle-picker-note, .main-container .muscle-choice-grid small,
+.main-container .equipment-drawing-note, .main-container .equipment-library-note,
+.main-container .exercise-library-note, .main-container .exercise-description,
+.main-container .training-muted, .main-container .training-last,
+.main-container .training-summary > p { color: #657653; }
+@media (max-width: 760px) {
+  .main-container .muscle-page-heading > div > p,
+  .main-container .equipment-page-heading > p,
+  .main-container .exercise-page-heading > p,
+  .main-container .training-heading p { font-size: 14px; color: #596c49; }
+  .main-container .body-scene-toolbar > span, .main-container .body-scene-hint,
+  .main-container .body-scene-hint > span, .main-container .muscle-picker-note,
+  .main-container .muscle-picker-title p, .main-container .muscle-choice-grid small,
+  .main-container .model-credits, .main-container .equipment-drawing-note,
+  .main-container .equipment-library-note, .main-container .equipment-card > p,
+  .main-container .equipment-profile > .equipment-alias, .main-container .equipment-targets > p,
+  .main-container .exercise-library-note, .main-container .exercise-category,
+  .main-container .exercise-teaching-label, .main-container .exercise-video-link small,
+  .main-container .exercise-dialog section > .exercise-secondary,
+  .main-container .training-last, .main-container .rest-timer-heading > span,
+  .main-container .rest-timer > small,
+  .main-container .training-summary dt, .main-container .training-summary > p,
+  .main-container .training-teaching-title small { font-size: 12px; line-height: 1.85; color: #657653; }
+  .main-container .exercise-open > p, .main-container .exercise-description,
+  .main-container .exercise-dialog section > p, .main-container .exercise-steps li,
+  .main-container .equipment-profile > p, .main-container .equipment-setup li,
+  .main-container .training-muted { font-size: 14px; line-height: 1.9; color: #596c49; }
+  .main-container .training-empty > p { font-size: 14px; line-height: 1.9; color: #596c49; }
+  .main-container .muscle-confirm > p, .main-container .confirm-structure,
+  .main-container .confirm-structure > span { font-size: 13px; color: #657653; }
+  .main-container .resolve-row textarea, .main-container .question-input,
+  .main-container .equipment-search input, .main-container .exercise-muscle-filter select,
+  .main-container .training-set-table input[type=text], .main-container .rest-duration input,
+  .main-container .modal textarea, .main-container .modal select { font-size: 16px; }
+  .main-container .time-link, .main-container .context > summary,
+  .main-container .filter-chip, .main-container .text-button,
+  .main-container .model-credits > summary, .main-container .muscle-region-tabs button { min-height: 44px; }
+  .main-container .context > summary { display: flex; align-items: center; }
+  .main-container .meta, .main-container .history-card-meta,
+  .main-container .history-source-titles, .main-container .history-card-bottom > span,
+  .main-container .result-reading-hint, .main-container .asr-caution,
+  .main-container .transcript-kind, .main-container .source-error,
+  .main-container .result-footer p, .main-container .model-note,
+  .main-container .comparison-footer > span, .main-container .context-footer > span {
+    font-size: 12px; line-height: 1.85; color: #657653;
+  }
+  .main-container .source-error { color: #8e443b; }
+  .main-container .history-card-meta, .main-container .comparison-footer { flex-wrap: wrap; }
+}
