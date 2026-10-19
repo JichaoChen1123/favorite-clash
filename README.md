@@ -52,11 +52,9 @@
   </tr>
 </table>
 
-截图来自实际运行页面；仓库不包含个人训练记录或对照数据库。
-
 ## 本地部署
 
-**以下步骤面向 Windows 10/11，使用 PowerShell。** 启停和手机访问入口已在 Windows 验证；其他系统暂未提供同等的启动脚本。
+**部署环境：Windows 10/11，命令行使用 PowerShell。**
 
 ### 1. 准备环境
 
@@ -109,7 +107,7 @@ codex login status
 
 在浏览器中使用 **Sign in with ChatGPT** 完成授权。登录方式见 [OpenAI 官方认证文档](https://learn.chatgpt.com/docs/auth)。
 
-当前启动入口配置为 **`gpt-6.1-sol` / `high`**，优先使用桌面应用附带的官方 CLI。本机已验证此接入；其他账号能否使用对应模型，取决于账号权限与 CLI 版本。启动时显示已登录，不等于每一次分析都会成功。
+默认分析配置为 **`gpt-6.1-sol` / `high`**，启动器优先使用桌面应用附带的官方 CLI。模型可用性取决于账号权限与 CLI 版本。
 
 如需明确指定已安装的官方原生可执行文件，在当前 PowerShell 中设置路径，再从同一窗口启动：
 
@@ -120,7 +118,7 @@ $env:CODEX_BINARY = 'C:\Tools\Codex\codex.exe'
 & $env:CODEX_BINARY login status
 ```
 
-网页不要求输入 API Key。视频文字与问题会通过本机 CLI 发给模型；订阅有使用额度，不提供无限调用。
+视频文字与问题通过本机 CLI 发送给模型，使用登录账号的 Codex 额度，无需在网页填写 API Key。
 
 ### 4. 启动网页
 
@@ -152,7 +150,7 @@ Invoke-RestMethod http://127.0.0.1:8787/api/health
 ```
 
 - `status: ok`：后台正在响应。
-- `provider_ready: true`：CLI登录状态检查通过，不代表已完成真实生成测试。
+- `provider_ready: true`：CLI已通过ChatGPT登录。
 - `ffmpeg_ready: true`：后台可以找到 FFmpeg。
 
 如果刚添加环境变量或安装 FFmpeg，停止并重启应用，使后台读取新环境。
@@ -245,14 +243,12 @@ cd ..
 .\launchers\start.cmd
 ```
 
-本地数据、缓存、账号文件和备份不进入 Git 仓库。不要删除 `data/` 来处理普通页面错误。
-
 ## 常见问题
 
 <details>
 <summary><b>页面能打开，但点击分析失败</b></summary>
 
-检查 `codex login status`、默认模型权限、CLI版本和电脑网络；如指定了 `CODEX_BINARY`，用同一可执行文件检查登录。旧全局CLI可能无法识别当前配置模型，可以明确指定已验证的官方原生CLI。
+检查 `codex login status`、默认模型权限、CLI版本和电脑网络；如指定了 `CODEX_BINARY`，用同一可执行文件检查登录。旧全局CLI可能无法识别当前配置模型，可以明确指定兼容的官方原生CLI。
 
 `provider_ready`只检查登录状态。页面会区分登录、接入、超时和格式问题；后台日志位于 `.runtime/server.stderr.log`。
 
@@ -262,8 +258,6 @@ cd ..
 <summary><b>模型额度不足怎么办？</b></summary>
 
 应用会暂停后续分析，保留字幕与历史；暂停状态在重启后仍保留。确认额度恢复并决定继续后，运行 `launchers/resume-analysis.cmd`，再回网页手动重试。
-
-解除暂停不会自动处理旧任务，也不会购买额度、使用重置额度或切换服务。
 
 </details>
 
@@ -321,7 +315,7 @@ flowchart LR
     H --> D
 ```
 
-模型只接收问题与材料，不执行工具。观点引用使用已保存分段编号关联，原句、时间和跳转由程序读取；没有向量数据库或全站检索。
+模型根据问题与视频文字提取观点、比较条件，并复核归纳与原文的一致性。引用通过已保存分段编号关联，原句、时间和跳转链接由程序读取。
 
 <details>
 <summary><b>开发检查与可选配置</b></summary>
@@ -336,7 +330,7 @@ node frontend/qa/audit-equipment.mjs
 node frontend/qa/audit-training.mjs
 ```
 
-需要前端实时开发时，开两个终端。后端使用独立数据目录，避免开发测试污染日常记录：
+前端实时开发使用两个终端，后端配置独立的开发数据目录：
 
 ```powershell
 # 终端一：项目根目录
@@ -359,7 +353,7 @@ Vite开发页默认在 `http://127.0.0.1:5173`，将 `/api` 转发至本机8000�
 | `WHISPER_MODEL` | 模型名或本地目录；启动器优先使用已缓存的small模型 |
 | `ASR_TIMEOUT_SECONDS` | 本地转写上限，默认900秒，范围30–1800 |
 | `CLASH_ALLOWED_HOSTS` | 额外允许的主机名；手机入口自动保存并在启动时加载 |
-| `BILI_COOKIE_FILE` | 可选，本人会话的本地Netscape格式cookies文件；不要提交 |
+| `BILI_COOKIE_FILE` | 可选，指定本地Netscape格式会话文件的路径 |
 
 Windows启动器固定分析模型与推理强度，并设置项目内的数据、缓存和私人域名；直接运行后端的开发环境请按需显式配置。接口结构见 [API_CONTRACT.md](docs/API_CONTRACT.md)。
 
