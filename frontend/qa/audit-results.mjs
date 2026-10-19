@@ -31,6 +31,11 @@ for (const id of ids) {
         assert.equal(evidence.start, segment.start);
         assert.equal(evidence.end, segment.end);
         assert.ok(evidence.context.some(segment => segment.id === evidence.segment_id));
+        for (const context of evidence.context) {
+          const original = source.segments.find(segment => segment.id === context.id);
+          assert.ok(original, 'Context must refer to a real stored subtitle segment');
+          assert.deepEqual(context, original, 'Context text and timing must match stored subtitles');
+        }
         assert.ok(evidence.start >= 0 && evidence.end <= source.duration + 3);
         const url = new URL(evidence.url);
         assert.equal(url.protocol, 'https:');

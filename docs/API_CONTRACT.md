@@ -21,7 +21,9 @@ Comparison: `{id:string,topic:string,classification:'agreement'|'different_condi
 Perspective: `{source_id:string,statement:string,audience:string,goal:string,conditions:string,limitations:string,evidence:Evidence[]}`.
 Evidence: `{source_id,segment_id,text,start,end,url,context:Segment[]}`. Evidence is assembled by server from saved source segments, never model-provided quote/time/URL. Original missing fields use `未说明`.
 
-Frontend: Chinese, mobile-first single-column cards. Navigation 新建对照 / 历史记录. Paste/resolve each link, explicit part select, question, start. Progress polls while queued/running; resume via URL `?job=id`. Result classification badges; expand exact quotes/context, source links and clear AI inference vs source distinction; report comparison/citation issue; failed-source subtitle upload + retry. No user API keys in browser.
+Frontend: Chinese, mobile-first single-column cards. 视频对照内导航 新建对照 / 对照历史. Paste/resolve each link, explicit part select, question, start. Progress polls while queued/running; resume via URL `?job=id`. Result classification badges; expand exact quotes/context, source links and clear AI inference vs source distinction; report comparison/citation issue; failed-source subtitle upload + retry. No user API keys in browser.
+
+异步结果受当前导航版本隔离：创建对照、历史读取返回后，仅发起它的页面仍有效时才自动打开任务；离开后已创建的任务仍在后台运行，可从历史找回。重试或字幕上传返回时，同时校验导航版本与当前任务ID，不能把旧任务内容覆盖到新任务。刷新请求的结果、错误和按钮状态按导航及刷新请求版本隔离；切换页面清除旧刷新状态，不把旧错误显示到新任务。
 
 Video module owned separately: `app/video.py` exports `VideoError(code, message)`, async `resolve_video(text)->dict`, async `load_transcript(source:dict, cache_dir:Path, progress:Callable[[str],None]|None=None)->dict` with `{kind:'subtitle'|'asr',segments:list[dict]}` and `parse_subtitle(content:bytes,filename:str)->list[dict]`. Segment IDs assigned stably by module (`seg-0001`). Network allowlist/SSRF defenses inside module. Local ASR only if available audio; explicit errors, no fabricated text.
 
@@ -35,7 +37,7 @@ Video module owned separately: `app/video.py` exports `VideoError(code, message)
 
 ## 动作库、收藏与视频对照导航
 
-主菜单为练哪里、动作收藏、视频对照；视频对照内提供新建对照和对照历史。`?view=favorites`打开动作收藏；原`?view=history`及`?job=ID`保留，均归属于视频对照菜单。
+当前主菜单为练哪里、视频对照、训练、动作收藏；视频对照内提供新建对照和对照历史。`?view=favorites`打开动作收藏；原`?view=history`及`?job=ID`保留，均归属于视频对照菜单。
 
 - GET `/api/exercises` → `{version,reviewed_at,note,items:Exercise[]}`，来自本地核对的静态动作目录，无模型推理。
 - GET `/api/exercise-favorites` → `{items:[{exercise_id,created_at}]}`，同一私人服务的PC和手机共用，按收藏时间倒序。

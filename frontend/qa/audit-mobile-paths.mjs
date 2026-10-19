@@ -1,0 +1,55 @@
+// Functional acceptance on the disposable preview; never run on live 8787.
+import assert from 'node:assert/strict';
+import { mkdir, writeFile } from 'node:fs/promises';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
+const base=process.argv[2];assert.equal(new URL(base).hostname,'127.0.0.1');assert.equal(new URL(base).port,'8790');
+const browser=await chromium.launch({channel:process.env.QA_BROWSER_CHANNEL||'msedge',headless:true});
+const results=[];const output=new URL('../../.runtime/mobile-path-qa/',import.meta.url);await mkdir(output,{recursive:true});
+try{
+  const context=await browser.newContext({viewport:{width:390,height:844}});const page=await context.newPage();
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.route('**/api/**',async route=>{
+    const path=new URL(route.request().url()).pathname;
+    if(path==='/api/health')return route.fulfill({json:{status:'ok',provider_ready:false,ffmpeg_ready:true,model:'mock'}});
+    if(route.request().method()!=='GET'&&!path.startsWith('/api/exercise-favorites/'))return route.fulfill({status:403,json:{detail:'QA blocks video processing'}});
+    return route.continue();
+  });
+  const favorites=await (await context.request.get(base+'/api/exercise-favorites')).json();
+  for(const item of favorites.items)assert.equal((await context.request.delete(base+'/api/exercise-favorites/'+item.exercise_id)).status(),200);
+  await page.route('**/models/ecorche/*.glb',route=>route.abort());
+  const button=name=>page.getByRole('button',{name,exact:true});
+  const noOverflow=async()=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  await page.goto(base+'/');await page.getByRole('alert').filter({hasText:'暂时无法显示模型'}).waitFor();
+  await button('选择胸部').click();await button('重新选择').click();
+  assert.equal(new URL(page.url()).searchParams.get('muscle'),null);
+  await button('选择胸部').click();await button('确认，进入胸部').click();
+  await page.getByRole('heading',{name:'胸部训练动作',exact:true}).waitFor();assert.equal(await page.locator('.exercise-card').count(),3);
+  assert.equal(await page.locator('.body-scene').count(),0);await noOverflow();
+  await button('固定器械').click();assert.equal(await page.locator('.exercise-card').count(),1);await button('全部器材').click();
+  await page.reload();await page.getByRole('heading',{name:'胸部训练动作',exact:true}).waitFor();assert.equal(await page.locator('.exercise-card').count(),3);
+  results.push('3D download failure still allows muscle selection, cancel, filtering and refresh');
+  await button('查看跪姿俯卧撑教学').click();
+  const video=page.getByRole('link',{name:'打开教学 ↗',exact:true});assert.ok((await video.getAttribute('href')).startsWith('https://www.bilibili.com/'));
+  const teaching=page.getByRole('dialog',{name:'跪姿俯卧撑',exact:true});
+  await teaching.getByRole('button',{name:'收藏跪姿俯卧撑',exact:true}).click();await teaching.getByRole('button',{name:'取消收藏跪姿俯卧撑',exact:true}).waitFor();await button('返回动作列表').click();
+  await button('动作收藏').click();await button('查看跪姿俯卧撑教学').waitFor();await page.reload();await button('查看跪姿俯卧撑教学').waitFor();
+  await button('取消收藏跪姿俯卧撑').click();await page.getByRole('heading',{name:'先收藏一个想练的动作',exact:true}).waitFor();
+  results.push('Teaching source link, favorite save, reload and removal');
+  await button('练哪里').click();await button('按器材选').click();
+  await page.getByRole('searchbox',{name:'查找器材',exact:true}).fill('夹腿');assert.equal(await page.locator('.equipment-card').count(),1);
+  await page.locator('.equipment-card').click();assert.equal(new URL(page.url()).searchParams.get('equipment'),'hip-adduction');
+  await page.reload();await button('查看坐姿器械腿内收教学').click();assert.equal(new URL(await video.getAttribute('href')).searchParams.get('p'),'55');await noOverflow();await button('返回动作列表').click();
+  await page.setViewportSize({width:360,height:800});await noOverflow();
+  assert.deepEqual(await page.locator('.workspace-bottom-nav button').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('aria-label'))),['练哪里','视频对照','训练','动作收藏']);
+  await page.screenshot({path:new URL('mobile360.png',output).pathname.replace(/^\/(.:)/,'$1')});
+  results.push('Equipment alias search, deep-link reload, correct P55 teaching, 390/360 layout');
+  const injected='<img src=x onerror="window.__qaInjected=true">';
+  await page.route('**/api/jobs',route=>route.fulfill({json:{items:[{id:'qa-escaped',question:injected,status:'completed',created_at:'2026-10-19T00:00:00Z',sources:[],result:null}]}}));
+  await page.goto(base+'/?view=history');await page.locator('.history-open').filter({hasText:injected}).waitFor();
+  assert.equal(await page.locator('img[src="x"]').count(),0);assert.equal(await page.evaluate(()=>Boolean(window.__qaInjected)),false);results.push('HTML-like history text renders as text, no injected image or script');
+  const restricted=await browser.newContext({viewport:{width:360,height:800}});await restricted.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new DOMException('storage blocked','SecurityError');}}));
+  const restrictedPage=await restricted.newPage();restrictedPage.on('pageerror',e=>errors.push(e.message));
+  await restrictedPage.goto(base+'/?view=training');await restrictedPage.getByRole('button',{name:'开始一次训练',exact:true}).waitFor();
+  assert.equal(await restrictedPage.getByRole('textbox',{name:'休息秒数',exact:true}).inputValue(),'90');results.push('Blocked localStorage still opens training and timer defaults');
+  assert.deepEqual(errors,[]);const report={status:'passed',cases:results,realModelRequests:0,videoLinksCheckedWithoutPlayback:true,physicalTouchNotTested:true};await writeFile(new URL('report.json',output),JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+}finally{await browser.close();}
