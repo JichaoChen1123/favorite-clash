@@ -96,3 +96,9 @@
 }
 
 .overview-counts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.overview-count{display:inline-flex;align-items:center;gap:4px;border:1px solid #d4dfc5;border-radius:6px;padding:6px 10px;font-size:12px;line-height:1.6;background:#f4f8ec;color:#526b40}.overview-count b{font-size:16px;color:#38542c}.overview-count.insufficient{background:#f8f6ed;color:#7e7250;border-color:#e3ddc7}.overview-count.conflict{background:#f9eee5;color:#875c40;border-color:#e7d5c6}.overview-preview{-webkit-line-clamp:3}
+
+/* Video navigation belongs to the application shell, including direct links. */
+.video-workspace-tabs{display:flex;gap:6px;width:max-content;max-width:100%;padding:5px;background:#eaf0e1;border:1px solid #dae3ce;border-radius:11px;margin:28px 0 0}
+.video-workspace-tabs button{border:0;background:transparent;color:#738366;border-radius:7px;padding:11px 23px;min-height:44px;font-size:13px}
+.video-workspace-tabs button.active{background:#fffef8;color:#37582c;box-shadow:0 2px 8px #344a2510}
+@media(max-width:760px){.video-workspace-tabs{margin-top:22px}.video-workspace-tabs button{font-size:12px;padding:10px 19px}.video-workspace-tabs+.hero{padding-top:25px}}

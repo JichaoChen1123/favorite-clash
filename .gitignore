@@ -19,9 +19,9 @@ pytest-cache-files-*/
 frontend/qa/*
 !frontend/qa/*.mjs
 # Private working notes and device-specific migration files stay local.
-/README.md
 /AGENTS.md
 /docs/*
+!/docs/assets/
 !/docs/API_CONTRACT.md
 !/docs/UPSTREAM.md
 !/docs/ANATOMY_ASSET.json

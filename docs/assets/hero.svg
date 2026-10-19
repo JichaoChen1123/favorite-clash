@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">练有引力</title>
+  <desc id="desc">从看懂，到练懂。肌群探索、视频对照、训练记录与动作收藏。</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#244638"/><stop offset="1" stop-color="#172f29"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#b1c98b" stop-opacity=".15"/><stop offset="1" stop-color="#b1c98b" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1280" height="320" rx="22" fill="url(#bg)"/>
+  <circle cx="1040" cy="160" r="270" fill="url(#glow)"/>
+  <g fill="none" stroke="#91aa78" stroke-opacity=".22"><ellipse cx="1040" cy="160" rx="180" ry="97" transform="rotate(-25 1040 160)"/><ellipse cx="1040" cy="160" rx="128" ry="137" transform="rotate(28 1040 160)"/><circle cx="1040" cy="160" r="62"/></g>
+  <g transform="translate(76 53)"><path d="M0 4 20 0 25 28 12 23 4 32Z" fill="#c3d8a5"/><path d="m22 9 19 5-5 31-12-10-10 1Z" fill="#859e67"/></g>
+  <text x="132" y="79" fill="#c2d1b1" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="17" letter-spacing="3">FITNESS · WITH CONTEXT</text>
+  <text x="76" y="174" fill="#f5f3e9" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="68" font-weight="700" letter-spacing="5">练有引力</text>
+  <text x="80" y="221" fill="#d0dbbf" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="24">从看懂，到练懂。</text>
+  <text x="80" y="269" fill="#9fb78c" font-family="Segoe UI,Microsoft YaHei,sans-serif" font-size="17">肌群探索　 /　 视频对照　 /　 训练记录　 /　 动作收藏</text>
+  <g fill="none" stroke="#d8e4c1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="1040" cy="128" r="10"/><path d="m1015 153 25 5 25-5m-25 5v30m-20 30 20-30 20 30m-45-65-12 23m62-23 12 23"/><rect x="877" y="100" width="42" height="32" rx="7"/><path d="m894 109 12 7-12 7Z"/><path d="M1135 213v-36h27v36l-14-9Z"/></g>
+  <circle cx="1116" cy="46" r="5" fill="#b6cb95"/><circle cx="899" cy="233" r="4" fill="#8fae73"/>
+</svg>
