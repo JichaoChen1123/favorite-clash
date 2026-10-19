@@ -62,10 +62,10 @@ export default function TrainingPage({visible}: {visible: boolean}) {
       if(startRest)setRestTrigger(x=>x+1);
       if(status!=='active'){setResetTimer(x=>x+1);setDetail(result);setTab('history');await load(true);window.scrollTo({top:0,behavior:'instant'});}
       return true;
-    }catch(err){setError(errorText(err));return false;}finally{setPending(false);}
+    }catch(err){setError(`保存未确认，当前输入仍保留。${errorText(err)}`);return false;}finally{setPending(false);}
   }
   async function choose(ids:string[]){
-    if(active){const added=ids.map(id=>{const item=library.catalog!.items.find(x=>x.id===id)!;return{exercise_id:id,name:item.name,equipment:item.equipment,sets:[blankSet(),blankSet(),blankSet()]};});const next=[...draft,...added];edit(next);if(await save(next))setChooser(false);return;}
+    if(active){const existing=new Set(draft.map(item=>item.exercise_id));const added=[...new Set(ids)].filter(id=>!existing.has(id)).map(id=>{const item=library.catalog!.items.find(x=>x.id===id)!;return{exercise_id:id,name:item.name,equipment:item.equipment,sets:[blankSet(),blankSet(),blankSet()]};});setChooser(false);if(!added.length)return;const next=[...draft,...added];edit(next);await save(next);return;}
     ++sequence.current;setPending(true);setError('');createId.current ||= crypto.randomUUID();
     try{const result=await api<TrainingSession>('/training',{method:'POST',body:JSON.stringify({id:createId.current,exercise_ids:ids})});setActive(result.status==='active'?result:null);setDraft(result.status==='active'?draftExercises(result):[]);setDirty(false);setChooser(false);createId.current=null;setNotice(result.status==='active'?'训练已开始。填写后保存，勾选完成会自动保存并开始休息。':'这次训练已结束，请重新开始一次训练。');}
     catch(err){setChooser(false);setError(errorText(err));}finally{setPending(false);}
